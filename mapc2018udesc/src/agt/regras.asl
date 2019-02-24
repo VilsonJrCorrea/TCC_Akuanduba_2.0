@@ -358,4 +358,21 @@ amilastfreetruck(ME)
 			  not gatherCommitment( AGENT, _ )	&
 			  not craftCommitment ( AGENT, _ )	&
 			  ME<AGENT
-			).							
+			).	
+
+	
+//==========================================================================
+howManyStorage(X)
+	:-
+		X=4
+	.
+	
+
+mountList(QTD,CONT,TAIL,LIST)
+	:-
+		CONT<QTD &
+	   .concat(storage,CONT,R)&
+	   mountList(QTD,CONT+1,[R|TAIL],LIST) 
+	.
+	
+mountList(QTD,CONT,LIST,LIST).

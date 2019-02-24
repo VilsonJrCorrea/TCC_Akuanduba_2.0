@@ -17,6 +17,7 @@ roundnumber(0).
 				!lastmotorcycle;
 				
 				!!buildPoligon;
+				!sendDistribution;
 				!!sendcentrals;
 				!!exploration;
 				
@@ -71,7 +72,29 @@ roundnumber(0).
 
 +!sendcentrals : not agentid("20")
 	<- true.
+	
+//==================================================================
++!sendDistribution
+	:	agentid("20")
+	<-	
+		.wait(step(X) & X>0 & X<998);
+		?howManyStorage(P);
+		!choiceStorages(P,LISTA);
+	.
 
++!sendDistribution : not agentid("20")
+	<- true.
+
+
++!choiceStorages(QTD,LISTA): true
+	<-
+		?mountList(QTD,0,[],LIST);
+		.broadcast(tell, storages(LIST) );
+	.	
+
+
+
+//==============================================================
 //@end[atomic]
 +simEnd: not simEnded & roundnumber(RN)
 	<-
