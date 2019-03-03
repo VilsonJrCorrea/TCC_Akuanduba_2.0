@@ -101,10 +101,14 @@ nearResourceNodeWithItem( X1,Y1, X0, Y0, ITEM ):-
 					 
 centerWorkshopRule(WORKSHOP)
 	:-
-		centerStorage(STORAGE)
-	&	storage(STORAGE,X0,Y0,_,_,_)
-	&	workshop(WORKSHOP, X1,Y1)
-	&	not (workshop(_,X2,Y2) & 
+		minLat(MILA) &
+		minLon(MILO) &
+		maxLat(MALA) &
+		maxLon(MALO) &
+		X0=(MILA+MALA)/2 &
+		Y0=(MILO+MALO)/2 &
+		workshop(WORKSHOP, X1,Y1) & 
+		not ( workshop(_, X2,Y2) & 
 			math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0)) > 
 			math.sqrt((X2-X0)*(X2-X0)+(Y2-Y0)*(Y2-Y0)))
 	.
@@ -151,7 +155,7 @@ calculatehowmanystepsrecharge(Facility,STEPSRECHARGE):-
 possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
 	:-
 		job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS)
-	&	centerStorage( STORAGE )
+	&	whatStorageUse( STORAGE )
 	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
 	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
 	&	lat( MEULAT )
@@ -167,7 +171,7 @@ possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
 possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
 	:-
 		mission(NOMEMISSION,LOCALENTREGA,_,STEPINICIAL,STEPFINAL,_,_,_,ITENS)
-	&	centerStorage( STORAGE )
+	&	whatStorageUse( STORAGE )
 	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
 	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
 	&	lat( MEULAT )

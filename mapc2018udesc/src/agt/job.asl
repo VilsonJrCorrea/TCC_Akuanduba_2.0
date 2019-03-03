@@ -16,7 +16,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	&   not amilastfreetruck(_) //teste
 //	&	step(STEPATUAL) & STEPATUAL>119
 	&	step(STEPATUAL)
-	&	centerStorage(STORAGE)
+	&	whatStorageUse(STORAGE)
 	&	storage(STORAGE,_,_,_,_,ITENSSTORAGE)
 	&	procurarTodosItens( ITENSJOB, ITENSSTORAGE )
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
@@ -44,7 +44,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	:
 		true
 	<-	
-		?centerStorage(STORAGE);
+		?whatStorageUse(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
 		PASSOS_1 = [ goto( STORAGE ) ];
 		?passosRetrieve( ITENS, [], RETORNO );

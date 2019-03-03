@@ -16,7 +16,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 	&	not missionCommitment( NAME, _ )
 	&	step(STEPATUAL) 
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
-	&	centerStorage(STORAGE)
+	&	whatStorageUse(STORAGE)
 	&	sumvolruleJOB( ITENS, VOLUMETOTAL )
 	&	CAPACIDADE >= VOLUMETOTAL
 	&	possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
@@ -38,7 +38,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 //@realizarMissionSimples[atomic]
 +!realizarMission( NOMEMISSION )
 	:
-		centerStorage(STORAGE)
+		whatStorageUse(STORAGE)
 	&	mission(NOMEMISSION,LOCALENTREGA,RECOMPENSA,STEPINICIAL,STEPFINAL,DESCONHECIDO1,DESCONHECIDO2,_,ITENSMISSION)
 	<-	
 		PASSOS_1 = [ goto( STORAGE ) ];

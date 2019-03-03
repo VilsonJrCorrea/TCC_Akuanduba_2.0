@@ -50,11 +50,7 @@ roundnumber(0).
 +!agentnumber: true
 	<-
 		?name(N);
-//		?team(T);
-//		jia.upper(T,BIGT);		
-//		.concat("agent",BIGT,D);
 		.delete("akuanduba_udesc",N,R);
-		//.print(R);
 		+agentid(R);
 	.
 
@@ -67,7 +63,7 @@ roundnumber(0).
 		?centerWorkshopRule(WORKSHOP);
 		+centerWorkshop(WORKSHOP);
 		.broadcast(tell, centerWorkshop(WORKSHOP) );
-		.broadcast(tell, centerStorage(STORAGE) );
+//		.broadcast(tell, centerStorage(STORAGE) );
 .
 
 +!sendcentrals : not agentid("20")
@@ -75,7 +71,7 @@ roundnumber(0).
 	
 //==================================================================
 +!sendDistribution
-	:	agentid("20")
+	:	agentid("19")
 	<-	
 		.wait(step(20));
 //		?howManyStorage(P);
@@ -119,7 +115,7 @@ roundnumber(0).
    		.drop_all_desires;
 	
 		.abolish(resourceNode(_,_,_,_));
-		.abolish(centerStorage(_));
+		.abolish(pointsOfPolygon(_));
 		.abolish(centerWorkshop(_));
 		.abolish(chargingStation(_,_,_,_));
 		.abolish(doing(_));

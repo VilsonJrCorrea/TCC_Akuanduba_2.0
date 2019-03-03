@@ -8,7 +8,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 lastdeadlinejobfirst(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENSJOB ):-
  	job( NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENSJOB ) 	&
  	not jobCommitment(_,NOMEJOB)										&
-	centerStorage(STORAGE) 												&
+	whatStorageUse(STORAGE) 												&
 	storage(STORAGE,_,_,_,_,ITENSSTORAGE)								& 
 	procurarTodosItens( ITENSJOB, ITENSSTORAGE )						&
     role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)								&
@@ -52,7 +52,7 @@ lastdeadlinejobfirst(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENSJOB 
 		true
 
 	<-	
-		?centerStorage(STORAGE);
+		?whatStorageUse(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
 		PASSOS_1 = [ goto( STORAGE ) ];
 		?passosRetrieve( ITENS, [], RETORNO );

@@ -40,7 +40,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 		true
 
 	<-	
-		?centerStorage(STORAGE);
+		?whatStorageUse(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
 		PASSOS_1 = [ goto( STORAGE ) ];
 		?passosRetrieve( ITENS, [], RETORNO );

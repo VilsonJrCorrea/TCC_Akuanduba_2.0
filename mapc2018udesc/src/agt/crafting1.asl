@@ -69,7 +69,7 @@
 +!craftComParts:	
 		role(ROLE,_,_,LOAD,_,_,_,_,_,_,_)  										&
 		name(NAMEAGENT) 														&
-		centerStorage(STORAGE) 													&	
+		whatStorageUse(STORAGE) 													&	
 		centerWorkshop(WORKSHOP) 												&
 		craftCommitment(NAMEAGENT,ITEM) 										
 	<-			

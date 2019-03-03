@@ -48,7 +48,7 @@
 						not (lastMotorcycle(NAMEAGENT)|lastCar(NAMEAGENT)) &
 						numberTotalCraft(NTC)				&
 						.count(craftCommitment(_,_))<=NTC	&
-						centerStorage(STORAGE) 				&	
+						whatStorageUse(STORAGE) 				&	
 						centerWorkshop(WORKSHOP) 			&
 						not craftCommitment(NAMEAGENT,_) 	&
 						not gatherCommitment(NAMEAGENT,_)
@@ -92,7 +92,7 @@
 +!craftComParts:	
 		role(ROLE,_,_,LOAD,_,_,_,_,_,_,_)  										&
 		name(NAMEAGENT) 														&
-		centerStorage(STORAGE) 													&	
+		whatStorageUse(STORAGE) 													&	
 		centerWorkshop(WORKSHOP) 												&
 		craftCommitment(NAMEAGENT,ITEM) 										
 	<-				

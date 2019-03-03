@@ -102,3 +102,5 @@ job(job8,storage0,216,36,99,[required(item12,1),required(item5,2)])
 job(job9,storage1,255,42,121,[required(item12,1),required(item7,1)])
 auction(job18,storage0,299,63,139,299,0,5,[required(item11,1),required(item12,1),required(item5,1),required(item6,1),required(item7,1)])
 mission(job3,storage2,407,21,99,407,407,0,[required(item12,1),required(item13,1),required(item6,1),required(item9,1)])
+
+pointsOfPolygon([storage(storage4,48.88148,2.27002,6.05638845033937),storage(storage7,48.88509,2.40376,4.188439003541811),storage(storage1,48.82957,2.32677,4.866228800959661),storage(storage0,48.85842,2.27773,5.525451488889527),storage(storage2,48.83586,2.37935,4.353046834440818)])[...].

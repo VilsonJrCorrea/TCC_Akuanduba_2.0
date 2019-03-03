@@ -1,7 +1,7 @@
 +!dropAll
 	:
 		hasItem( _, _)
-	&	centerStorage( STORAGE )
+	&	whatStorageUse( STORAGE )
 	<-
 		?buildStore( [], LISTAFINAL );
 		.concat( [goto(STORAGE)], LISTAFINAL, PASSOS );
