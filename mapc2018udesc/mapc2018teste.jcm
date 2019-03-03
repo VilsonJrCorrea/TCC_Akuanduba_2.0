@@ -1,138 +1,138 @@
 mas mapc2018udesc {
 	
-agent akuanduba_udesc1: agentA.asl{ 
+agent akuanduba_distribuido1: agentA.asl{ 
  join: env
 focus: env.art1, coogather
 }
-agent akuanduba_udesc2: agentA.asl{ 
+agent akuanduba_distribuido2: agentA.asl{ 
  join: env
 focus: env.art2, coogather
 }
-agent akuanduba_udesc3: agentA.asl{ 
+agent akuanduba_distribuido3: agentA.asl{ 
  join: env
 focus: env.art3, coogather
 }
-agent akuanduba_udesc4: agentA.asl{ 
+agent akuanduba_distribuido4: agentA.asl{ 
  join: env
 focus: env.art4, coogather
 }
-agent akuanduba_udesc5: agentA.asl{ 
+agent akuanduba_distribuido5: agentA.asl{ 
  join: env
 focus: env.art5, coogather
 }
-agent akuanduba_udesc6: agentA.asl{ 
+agent akuanduba_distribuido6: agentA.asl{ 
  join: env
 focus: env.art6, coogather
 }
-agent akuanduba_udesc7: agentA.asl{ 
+agent akuanduba_distribuido7: agentA.asl{ 
  join: env
 focus: env.art7, coogather
 }
-agent akuanduba_udesc8: agentA.asl{ 
+agent akuanduba_distribuido8: agentA.asl{ 
  join: env
 focus: env.art8, coogather
 }
-agent akuanduba_udesc9: agentA.asl{ 
+agent akuanduba_distribuido9: agentA.asl{ 
  join: env
 focus: env.art9, coogather
 }
-agent akuanduba_udesc10: agentA.asl{ 
+agent akuanduba_distribuido10: agentA.asl{ 
  join: env
 focus: env.art10, env.artpolygonwell, coogather
 }
-agent akuanduba_udesc11: agentA.asl{ 
+agent akuanduba_distribuido11: agentA.asl{ 
  join: env
 focus: env.art11, coogather
 }
-agent akuanduba_udesc12: agentA.asl{ 
+agent akuanduba_distribuido12: agentA.asl{ 
  join: env
 focus: env.art12, coogather
 }
-agent akuanduba_udesc13: agentA.asl{ 
+agent akuanduba_distribuido13: agentA.asl{ 
  join: env
 focus: env.art13, coogather
 }
-agent akuanduba_udesc14: agentA.asl{ 
+agent akuanduba_distribuido14: agentA.asl{ 
  join: env
 focus: env.art14, coogather
 }
-agent akuanduba_udesc15: agentA.asl{ 
+agent akuanduba_distribuido15: agentA.asl{ 
  join: env
 focus: env.art15, coogather
 }
-agent akuanduba_udesc16: agentA.asl{ 
+agent akuanduba_distribuido16: agentA.asl{ 
  join: env
 focus: env.art16, coogather
 }
-agent akuanduba_udesc17: agentA.asl{ 
+agent akuanduba_distribuido17: agentA.asl{ 
  join: env
 focus: env.art17, coogather
 }
-agent akuanduba_udesc18: agentA.asl{ 
+agent akuanduba_distribuido18: agentA.asl{ 
  join: env
 focus: env.art18, coogather
 }
-agent akuanduba_udesc19: agentA.asl{ 
+agent akuanduba_distribuido19: agentA.asl{ 
  join: env
 focus: env.art19, coogather
 }
-agent akuanduba_udesc20: agentA.asl{ 
+agent akuanduba_distribuido20: agentA.asl{ 
  join: env
 focus: env.art20, env.artpolygonstorage, coogather
 }
-agent akuanduba_udesc21: agentA.asl{ 
+agent akuanduba_distribuido21: agentA.asl{ 
  join: env
 focus: env.art21, coogather
 }
-agent akuanduba_udesc22: agentA.asl{ 
+agent akuanduba_distribuido22: agentA.asl{ 
  join: env
 focus: env.art22, coogather
 }
-agent akuanduba_udesc23: agentA.asl{ 
+agent akuanduba_distribuido23: agentA.asl{ 
  join: env
 focus: env.art23, coogather
 }
-agent akuanduba_udesc24: agentA.asl{ 
+agent akuanduba_distribuido24: agentA.asl{ 
  join: env
 focus: env.art24, coogather
 }
-agent akuanduba_udesc25: agentA.asl{ 
+agent akuanduba_distribuido25: agentA.asl{ 
  join: env
 focus: env.art25, coogather
 }
-agent akuanduba_udesc26: agentA.asl{ 
+agent akuanduba_distribuido26: agentA.asl{ 
  join: env
 focus: env.art26, coogather
 }
-agent akuanduba_udesc27: agentA.asl{ 
+agent akuanduba_distribuido27: agentA.asl{ 
  join: env
 focus: env.art27, coogather
 }
-agent akuanduba_udesc28: agentA.asl{ 
+agent akuanduba_distribuido28: agentA.asl{ 
  join: env
 focus: env.art28, coogather
 }
-agent akuanduba_udesc29: agentA.asl{ 
+agent akuanduba_distribuido29: agentA.asl{ 
  join: env
 focus: env.art29, coogather
 }
-agent akuanduba_udesc30: agentA.asl{ 
+agent akuanduba_distribuido30: agentA.asl{ 
  join: env
 focus: env.art30, coogather
 }
-agent akuanduba_udesc31: agentA.asl{ 
+agent akuanduba_distribuido31: agentA.asl{ 
  join: env
 focus: env.art31, coogather
 }
-agent akuanduba_udesc32: agentA.asl{ 
+agent akuanduba_distribuido32: agentA.asl{ 
  join: env
 focus: env.art32, coogather
 }
-agent akuanduba_udesc33: agentA.asl{ 
+agent akuanduba_distribuido33: agentA.asl{ 
  join: env
 focus: env.art33, coogather
 }
-agent akuanduba_udesc34: agentA.asl{ 
+agent akuanduba_distribuido34: agentA.asl{ 
  join: env
 focus: env.art34, coogather
 }

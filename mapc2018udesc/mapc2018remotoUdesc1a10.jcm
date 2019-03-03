@@ -1,42 +1,42 @@
 mas mapc2018udesc {
 //TIME A - Remoto	
-agent akuanduba_udesc1: agentA.asl{ 
+agent akuanduba_distribuido1: agentA.asl{ 
  join: env, enva
 focus: env.art1, enva.coogather
 }
-agent akuanduba_udesc2: agentA.asl{ 
+agent akuanduba_distribuido2: agentA.asl{ 
  join: env, enva
 focus: env.art2, enva.coogather
 }
-agent akuanduba_udesc3: agentA.asl{ 
+agent akuanduba_distribuido3: agentA.asl{ 
  join: env, enva
 focus: env.art3, enva.coogather
 }
-agent akuanduba_udesc4: agentA.asl{ 
+agent akuanduba_distribuido4: agentA.asl{ 
  join: env, enva
 focus: env.art4, enva.coogather
 }
-agent akuanduba_udesc5: agentA.asl{ 
+agent akuanduba_distribuido5: agentA.asl{ 
  join: env, enva
 focus: env.art5,enva.coogather
 }
-agent akuanduba_udesc6: agentA.asl{ 
+agent akuanduba_distribuido6: agentA.asl{ 
  join: env, enva
 focus: env.art6,enva.coogather
 }
-agent akuanduba_udesc7: agentA.asl{ 
+agent akuanduba_distribuido7: agentA.asl{ 
  join: env, enva
 focus: env.art7,enva.coogather
 }
-agent akuanduba_udesc8: agentA.asl{ 
+agent akuanduba_distribuido8: agentA.asl{ 
  join: env, enva
 focus: env.art8,enva.coogather
 }
-agent akuanduba_udesc9: agentA.asl{ 
+agent akuanduba_distribuido9: agentA.asl{ 
  join: env, enva
 focus: env.art9,enva.coogather
 }
-agent akuanduba_udesc10: agentA.asl{ 
+agent akuanduba_distribuido10: agentA.asl{ 
  join: env, enva
 focus: env.art10,enva.artpolygon, enva.coogather
 }
