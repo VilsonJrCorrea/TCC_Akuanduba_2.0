@@ -9,7 +9,9 @@
 	<-
 //		.print("Entrou no fastgathering.");
 //		?centerStorage( STORAGECENTRAL );
-		.wait(centerStorage( STORAGECENTRAL ));
+//		.wait(centerStorage( STORAGECENTRAL ));
+		.wait(pointsOfPolygon( _ ));
+		?whatStorageUse(STORAGECENTRAL);
 		.wait(storage( STORAGECENTRAL, _, _, _, _, LISTA));
 		?role( _,_,_,CAPACIDADE,_,_,_,_,_,_,_) ;
 //		?resourceNode( _,_,_,_) ;

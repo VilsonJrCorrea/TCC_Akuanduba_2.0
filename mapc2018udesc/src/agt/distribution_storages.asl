@@ -6,11 +6,9 @@
 			addPoint(NAME,X,Y);
 		}
 		buildPolygonForStorages;
-		.print("Poligono restart round pronto !!");
 		getPolygonOfStorages(POLYGON);
-		.print("---------->",POLYGON);
 		getPointsOfPolygon(POINTS);
-		.print("==========|======== ",POINTS);
+		.print("================== ",POINTS);
 		.broadcast(tell, POINTS );
 		
 	.

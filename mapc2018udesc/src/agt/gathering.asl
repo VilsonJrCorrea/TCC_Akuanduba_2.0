@@ -29,7 +29,10 @@
 		?item(ITEM,TAM,_,_);
 		QTD = math.floor( (LOAD / TAM) ) ;		
 		?repeat( gather, QTD-2, [], GATHERS );
-		.wait(centerStorage(FS));
+		
+//		.wait(centerStorage(FS));
+		.wait(pointsOfPolygon( _ ));
+		?whatStorageUse(FS);
 		.concat([goto(LATRESOUR, LONRESOUR)],GATHERS,[goto(FS),store(ITEM,QTD)],PLAN);
 //		+steps( craftSemParts, PLAN);
 //		-expectedplan( craftSemParts, _);

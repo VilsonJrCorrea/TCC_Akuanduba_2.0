@@ -58,8 +58,8 @@ roundnumber(0).
 	:	agentid("20")
 	<-	
 		.wait(step(X) & X>0 & X<998);
-		?centerStorageRule(STORAGE); 
-		+centerStorage(STORAGE);
+//		?centerStorageRule(STORAGE); 
+//		+centerStorage(STORAGE);
 		?centerWorkshopRule(WORKSHOP);
 		+centerWorkshop(WORKSHOP);
 		.broadcast(tell, centerWorkshop(WORKSHOP) );
@@ -69,40 +69,6 @@ roundnumber(0).
 +!sendcentrals : not agentid("20")
 	<- true.
 	
-//==================================================================
-+!sendDistribution
-	:	agentid("19")
-	<-	
-		.wait(step(20));
-//		?howManyStorage(P);
-		!buildPolygonOfStorages;
-
-		!choiceStorages(P,LISTA);
-	.
-
-+!buildPolygonOfStorages:true
-	<-
-		for(storage(_,X,Y,_,_,_)) {
-			addPoint(X,Y);
-		}
-		buildPolygon;
-		.print("Poligono restart round pronto !!");
-		getPolygon(POLYGON);
-		.print("---------->",POLYGON);
-		getMidPointOfPolygon(MIDPOINT);
-		.print("==========|======== ",MIDPOINT);
-	.
-+!sendDistribution : not agentid("20")
-	<- true.
-
-
-+!choiceStorages(QTD,LISTA): true
-	<-
-		?mountList(QTD,0,[],LIST);
-		.broadcast(tell, storages(LIST) );
-	.	
-
-
 
 //==============================================================
 //@end[atomic]

@@ -126,18 +126,18 @@ finddrone(LATC, LONC, AG):-
 			  math.sqrt((OLAT-LATC)*(OLAT-LATC)+(OLON-LONC)*(OLON-LONC))
 			).
 
-centerStorageRule(Facility)
-	:-
-		minLat(MILA) &
-		minLon(MILO) &
-		maxLat(MALA) &
-		maxLon(MALO) &
-		X0=(MILA+MALA)/2 &
-		Y0=(MILO+MALO)/2 &
-		storage(Facility, X1,Y1,_ ,_ , _) & 
-		not ( storage(_, X2,Y2,_ ,_ , _) & 
-			math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0)) > 
-			math.sqrt((X2-X0)*(X2-X0)+(Y2-Y0)*(Y2-Y0))).
+//centerStorageRule(Facility)
+//	:-
+//		minLat(MILA) &
+//		minLon(MILO) &
+//		maxLat(MALA) &
+//		maxLon(MALO) &
+//		X0=(MILA+MALA)/2 &
+//		Y0=(MILO+MALO)/2 &
+//		storage(Facility, X1,Y1,_ ,_ , _) & 
+//		not ( storage(_, X2,Y2,_ ,_ , _) & 
+//			math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0)) > 
+//			math.sqrt((X2-X0)*(X2-X0)+(Y2-Y0)*(Y2-Y0))).
 
 calculatedistance( XA, YA, XB, YB, DISTANCIA )
 					:- DISTANCIA =  math.sqrt((XA-XB)*(XA-XB)+(YA-YB)*(YA-YB)).
