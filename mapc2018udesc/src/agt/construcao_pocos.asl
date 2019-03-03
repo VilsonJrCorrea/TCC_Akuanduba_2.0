@@ -1,34 +1,33 @@
-+!buildPoligon :    name(AG) & 
++!buildPoligonToWells :    name(AG) & 
 					not lastMotorcycle(AG)
 	<- true.
 
-+!buildPoligon:  	name(AG) &
++!buildPoligonToWells:  	name(AG) &
 					lastMotorcycle(AG)  
 	<-
 		.wait(step(10));
 	
 		for(chargingStation(_,X,Y,_)) {
-			addPoint(X,Y);
+			addPointToBuildWell(X,Y);
 		}
 		for(dump(_,X,Y)) {
-			addPoint(X,Y);
+			addPointToBuildWell(X,Y);
 		}
 		for(shop(_,X,Y)) {
-			addPoint(X,Y);
+			addPointToBuildWell(X,Y);
 		}
 		for(workshop(_,X,Y)) {
-			addPoint(X,Y);
+			addPointToBuildWell(X,Y);
 		}
 		for(storage(_,X,Y,_,_,_)) {
-			addPoint(X,Y);
+			addPointToBuildWell(X,Y);
 		}
-		buildPolygon;
-//		.print("Poligono pronto !!");
+		buildPolygonForWells;
+		getPolygonOfWells(POLYGON);
 		?betterWell(WELL);
 		?lastCar(LASTCAR);
 		.send(LASTCAR,achieve,buildWell( WELL, AG, 2, 9 ));
 		!buildWell( WELL, AG, 4, 9 );
-		.print("WELL: ",WELL);
 	.
 
 //+massium(M):M>4000 & not pocosExtra

@@ -19,6 +19,7 @@
 //{ include("mission2.asl") }
 { include("construcao_pocos.asl")}
 { include("restartround.asl")}
+{ include("distribution_storages.asl")}
 { include("huntwell.asl") }
 { include("dropall.asl") }
 { include("areacritica.asl") }

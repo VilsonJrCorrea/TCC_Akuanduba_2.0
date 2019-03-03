@@ -38,7 +38,7 @@ focus: env.art9, coogather
 }
 agent akuanduba_udesc10: agentA.asl{ 
  join: env
-focus: env.art10,env.artpolygon, coogather
+focus: env.art10, env.artpolygonwell, coogather
 }
 agent akuanduba_udesc11: agentA.asl{ 
  join: env
@@ -78,7 +78,7 @@ focus: env.art19, coogather
 }
 agent akuanduba_udesc20: agentA.asl{ 
  join: env
-focus: env.art20, coogather
+focus: env.art20, env.artpolygonstorage, coogather
 }
 agent akuanduba_udesc21: agentA.asl{ 
  join: env
@@ -309,7 +309,8 @@ artifact art31: EISAccess("conf/local/eis30.json")
 artifact art32: EISAccess("conf/local/eis31.json")
 artifact art33: EISAccess("conf/local/eis32.json")
 artifact art34: EISAccess("conf/local/eis33.json")
-artifact artpolygon: calculos.ARTGreyZone
+artifact artpolygonwell: calculos.ARTGreyZoneToWells
+artifact artpolygonstorage:calculos.ARTGreyZoneToStorages
 artifact coogather: CoordinationArtifact
 }
 

@@ -362,17 +362,36 @@ amilastfreetruck(ME)
 
 	
 //==========================================================================
-howManyStorage(X)
-	:-
-		X=4
-	.
-	
 
-mountList(QTD,CONT,TAIL,LIST)
-	:-
-		CONT<QTD &
-	   .concat(storage,CONT,R)&
-	   mountList(QTD,CONT+1,[R|TAIL],LIST) 
-	.
-	
-mountList(QTD,CONT,LIST,LIST).
+whatStorageUse(R):-
+	pointsOfPolygon(LIST) &
+	percorreLista(LIST,100000,STORAGE,R) 
+.					
+
+percorreLista([H|T],DISTANCIA,MELHORSTORAGE,R):-
+										 desmontaItemLista(H,NAMEATUAL,LATDESTINO,LONDESTINO) &
+										 lat(LATATUAL) &
+										 lon(LONATUAL) &
+										 calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) &
+										 validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)&
+										 validaNameStorage(DISTANCIACALCULADA,DISTANCIA,MELHORSTORAGE,NAMEATUAL,NOVOMELHORSTORAGE)&
+										 percorreLista(T,MENORDISTANCIA,NOVOMELHORSTORAGE,R)
+								.
+								
+percorreLista([],DISTANCIA,MELHORSTORAGE,R):- R=MELHORSTORAGE.
+
+validaMenorDistancia(X,Y,P):-X>Y& P=Y.
+validaMenorDistancia(X,Y,P):-X<=Y&P=X.
+
+validaNameStorage(X,Y,NAMESTORAGE,NAMEATUAL,P):- X>Y  & P = NAMESTORAGE.
+validaNameStorage(X,Y,NAMESTORAGE,NAMEATUAL,P):- X<=Y & P = NAMEATUAL.
+						
+
+desmontaItemLista(storage(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
+					NNAME=NAME &
+					LLAT=LAT &
+					LLON=LON
+		.
+
+
+

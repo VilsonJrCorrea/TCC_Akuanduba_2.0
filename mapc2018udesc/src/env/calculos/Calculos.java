@@ -48,7 +48,7 @@ public class Calculos {
 		return retasPoligono;
 	}
 	
-	public String toBelief() {
+	public String getPolygonToBelief() {
 		String s = "polygon([";
 		for( Reta r : retasPoligono ) 
 			s += "rule(" + r.getOrigem().getX()  + ","
@@ -57,6 +57,38 @@ public class Calculos {
 						 + r.getDestino().getY() + "),";
 		s = s.substring(0, s.length()-1);
 		return s + "])";
+	}
+	
+	public String getPointsOfPolygonToBelief() {
+		String s = "pointsOfPolygon([";
+		for( Reta r : retasPoligono ) {
+			s += "storage(" +r.getOrigem().getNome()+","
+							+ r.getOrigem().getX()  + ","
+							+ r.getOrigem().getY()  + ","
+							+ String.valueOf(
+									distance(r.getOrigem().getX(),
+											 r.getOrigem().getY()))+
+						"),";
+		}
+		s = s.substring(0, s.length()-1);
+		s=s + "])";
+		return s;
+	}
+	private double distance(double lat1, double lon1) {
+		double lat2=pontoMedio.getX();
+		double lon2=pontoMedio.getY();
+		if ((lat1 == lat2) && (lon1 == lon2)) {
+			return 0;
+		}
+		else {
+			double theta = lon1 - lon2;
+			double dist = Math.sin(Math.toRadians(lat1)) * Math.sin(Math.toRadians(lat2)) + Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) * Math.cos(Math.toRadians(theta));
+			dist = Math.acos(dist);
+			dist = Math.toDegrees(dist);
+			dist = dist * 60 * 1.1515;
+				dist = dist * 1.609344;
+			return (dist);
+		}
 	}
 	
 	public void mostrarInformacoes() {
@@ -75,15 +107,19 @@ public class Calculos {
 		for( Ponto p : pontosNaoCalculados ) {
 			if( maisAcima.getY() < p.getY() ) {
 				maisAcima = p;
+				maisAcima.setNome(p.getNome());
 			}
 			if( maisAbaixo.getY() > p.getY() ) {
 				maisAbaixo = p;
+				maisAbaixo.setNome(p.getNome());
 			}
 			if( maisEsquerda.getX() > p.getX() ) {
 				maisEsquerda = p;
+				maisEsquerda.setNome(p.getNome());
 			}
 			if( maisDireita.getX() < p.getX() ) {
 				maisDireita = p;
+				maisDireita.setNome(p.getNome());
 			}
 		}
 		pontosNaoCalculados.remove( maisAcima );
@@ -112,6 +148,10 @@ public class Calculos {
 			= ( maisAbaixo.getY() + maisAcima.getY() + maisDireita.getY() + maisEsquerda.getY() ) / 4;
 		pontoMedio = new Ponto("Medio", xMedio, yMedio);
 	}
+//	
+//	public String getMidPointOfPolygon() {
+//		return "midPoint("+pontoMedio.getX() +","+pontoMedio.getY()+")";
+//	}
 	
 	private double calcularDistancia( Ponto p1, Ponto p2 ) {
 		return Math.sqrt( Math.pow( p1.getX() - p2.getX(), 2) + Math.pow( p1.getY() - p2.getY(), 2) );
@@ -169,6 +209,8 @@ public class Calculos {
 				( p1.getX() + p2.getX() ) / 2,
 				( p1.getY() + p2.getY() ) / 2 );
 	}
+	
+	
 	
 	private class PontoComDistancia {
 		private Ponto ponto;

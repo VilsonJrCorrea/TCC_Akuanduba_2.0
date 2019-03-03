@@ -43,7 +43,6 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 +!realizarJob( NOMEJOB )
 	:
 		true
-
 	<-	
 		?centerStorage(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);

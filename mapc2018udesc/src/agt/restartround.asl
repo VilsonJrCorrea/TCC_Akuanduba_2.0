@@ -16,8 +16,8 @@ roundnumber(0).
 				!lastcar;
 				!lastmotorcycle;
 				
-				!!buildPoligon;
-				!sendDistribution;
+				!!buildPoligonToWells;
+				!!buildPoligonToStorages;
 				!!sendcentrals;
 				!!exploration;
 				
@@ -77,11 +77,25 @@ roundnumber(0).
 +!sendDistribution
 	:	agentid("20")
 	<-	
-		.wait(step(X) & X>0 & X<998);
-		?howManyStorage(P);
+		.wait(step(20));
+//		?howManyStorage(P);
+		!buildPolygonOfStorages;
+
 		!choiceStorages(P,LISTA);
 	.
 
++!buildPolygonOfStorages:true
+	<-
+		for(storage(_,X,Y,_,_,_)) {
+			addPoint(X,Y);
+		}
+		buildPolygon;
+		.print("Poligono restart round pronto !!");
+		getPolygon(POLYGON);
+		.print("---------->",POLYGON);
+		getMidPointOfPolygon(MIDPOINT);
+		.print("==========|======== ",MIDPOINT);
+	.
 +!sendDistribution : not agentid("20")
 	<- true.
 
@@ -127,24 +141,8 @@ roundnumber(0).
 		.abolish(started);			
 	.
 	
-//+!upgradelasttruck 
-//	: amilastfreetruck(ME)
-//	<-
-//		.print("upgrading capacity");
-//		?nearshop(SHOP);
-//		?upgrade(load,_,SIZE);
-//		?role(_,_,_,BASELOAD,_,_,_,_,_,_,_);
-//		QTDUPGRADE = math.floor((150-BASELOAD)/SIZE);
-//		?repeat(upgrade(load) , QTDUPGRADE , [] , RUPGRADE );
-//		SETUPLOAD = [goto(SHOP)|RUPGRADE ];
-//		!addtask(upgradecapacity,9.1,SETUPLOAD,[]);		
-//	.
-//
-//+!upgradelasttruck
-//	<- true.
 	
 +steps(S): step(S-1)
 <-
-	//.print("Estou no ultimo step ",S-1);
 	.abolish(simEnded);	
 .
