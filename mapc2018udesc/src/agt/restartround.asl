@@ -85,6 +85,7 @@ roundnumber(0).
 		.abolish(pointsPolygonStorage(_));
 		.abolish(pointsPolygonWorkshop(_));
 		.abolish(chargingStation(_,_,_,_));
+		.abolish(centerWorkshop(_));
 		.abolish(doing(_));
 		.abolish(lastDoing(_));
 		.abolish(laststep(_));	
