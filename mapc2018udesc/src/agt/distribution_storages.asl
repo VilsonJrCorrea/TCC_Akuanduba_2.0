@@ -16,16 +16,15 @@
 		getPointsOfPolygonAdjusted(POINTSADJUSTED);
 		.print("Pontos sem ajuste ",POINTS);
 		.print("Pontos ajustados ",POINTSADJUSTED);
-		?getList(POINTSADJUSTED,LIST);
-		.print("A---> ",POINTSADJUSTED);
-		.print("B---> ",LIST);
-		+pointsPolygonStorage(POINTSADJUSTED);
-		.broadcast(tell, pointsPolygonStorage(POINTSADJUSTED) );
+		!getList(POINTSADJUSTED,RETORNO);
+		+pointsPolygonStorage(RETORNO);
+		.broadcast(tell, pointsPolygonStorage(RETORNO) );
 		
 	.
 +!buildPoligonToStorages : not agentid("19")
 	<- true.
 
-getList(POINTS,LIST):-
-	LIST=POINTS
++!getList(pointsPolygonStorage(LIST),RETORNO):true
+	<-
+	RETORNO=LIST
 .
