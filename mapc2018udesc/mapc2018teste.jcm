@@ -74,11 +74,11 @@ focus: env.art18, coogather
 }
 agent akuanduba_distribuido19: agentA.asl{ 
  join: env
-focus: env.art19, coogather
+focus: env.art19, env.artpolygonstorage, coogather
 }
 agent akuanduba_distribuido20: agentA.asl{ 
  join: env
-focus: env.art20, env.artpolygonstorage, coogather
+focus: env.art20,  coogather
 }
 agent akuanduba_distribuido21: agentA.asl{ 
  join: env
