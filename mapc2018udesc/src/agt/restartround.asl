@@ -99,6 +99,7 @@ roundnumber(0).
 		.abolish(task(_,_,_,_));
 //		.abolish(steps(_,_));
 		
+		
 		-+roundnumber(RN+1);
 		resetBlackboard(RN+1);		
 		
