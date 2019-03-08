@@ -7,9 +7,6 @@
 	&	not missionCommitment( NAME, _ )	
 	&	not (lastMotorcycle(NAME)|lastCar(NAME))
 	<-
-//		.print("Entrou no fastgathering.");
-//		?centerStorage( STORAGECENTRAL );
-//		.wait(centerStorage( STORAGECENTRAL ));
 		.wait(pointsPolygonStorage( _ ));
 		?whatStorageUse(STORAGECENTRAL);
 		.wait(storage( STORAGECENTRAL, _, _, _, _, LISTA));
