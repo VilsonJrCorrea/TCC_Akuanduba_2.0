@@ -33,7 +33,7 @@ public class Executar {
 		Ponto k = new Ponto( "K", 3, 0 ); lista.add( k );
 		Ponto l = new Ponto( "L", 0, 4 ); lista.add( l );
 		
-		Calculos cal = new Calculos( lista );
+		Calculos cal = new Calculos( "",lista );
 		cal.construirPoligono();
 		cal.mostrarInformacoes();
 		

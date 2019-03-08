@@ -31,7 +31,7 @@
 		?repeat( gather, QTD-2, [], GATHERS );
 		
 //		.wait(centerStorage(FS));
-		.wait(pointsOfPolygon( _ ));
+		.wait(pointsPolygonStorage( _ ));
 		?whatStorageUse(FS);
 		.concat([goto(LATRESOUR, LONRESOUR)],GATHERS,[goto(FS),store(ITEM,QTD)],PLAN);
 //		+steps( craftSemParts, PLAN);

@@ -6,10 +6,17 @@
 			addPoint(NAME,X,Y);
 		}
 		buildPolygonForStorages;
+		?maxLat(MAXLAT);
+		?maxLon(MAXLON);
+		?minLat(MINLAT);
+		?minLon(MINLON);
+		addBordas(MINLAT,MAXLAT,MINLON,MAXLON);
 		getPolygonOfStorages(POLYGON);
 		getPointsOfPolygon(POINTS);
-		.print("================== ",POINTS);
-		.broadcast(tell, POINTS );
+		getPointsOfPolygonAdjusted(POINTSADJUSTED);
+		.print("Pontos sem ajuste ",POINTS);
+		.print("Pontos ajustados ",POINTSADJUSTED);
+		.broadcast(tell, POINTSADJUSTED );
 		
 	.
 +!buildPoligonToStorages : not agentid("20")

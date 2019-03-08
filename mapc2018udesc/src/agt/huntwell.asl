@@ -2,7 +2,7 @@
 									      TEAMADV \==TEAM					&
 									      not pocosInimigos(WELLID,_,_,_)
 	<-
-		.send(akuanduba_udesc11,tell,wellToDestroy( WELLID, LAT, LON, WELLTYPE ));
+		.send(akuanduba_distribuido11,tell,wellToDestroy( WELLID, LAT, LON, WELLTYPE ));
 	.
 
 @hungryfordestruction[atomic]

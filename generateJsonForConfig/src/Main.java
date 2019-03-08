@@ -29,7 +29,7 @@ public class Main {
         boolean notifications = false;
         boolean queued = false;
         String preConnection = "connection";
-        String preUserName = "akuanduba_udesc";
+        String preUserName = "akuanduba_distribuido";
         String password = "kF5pLs";
         boolean iilang = false;
         boolean xml = false;

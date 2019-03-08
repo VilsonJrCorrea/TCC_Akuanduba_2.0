@@ -10,7 +10,7 @@
 //		.print("Entrou no fastgathering.");
 //		?centerStorage( STORAGECENTRAL );
 //		.wait(centerStorage( STORAGECENTRAL ));
-		.wait(pointsOfPolygon( _ ));
+		.wait(pointsPolygonStorage( _ ));
 		?whatStorageUse(STORAGECENTRAL);
 		.wait(storage( STORAGECENTRAL, _, _, _, _, LISTA));
 		?role( _,_,_,CAPACIDADE,_,_,_,_,_,_,_) ;

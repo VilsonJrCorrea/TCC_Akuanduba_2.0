@@ -12,7 +12,7 @@ public class ARTGreyZoneToWells extends Artifact {
 	private List<Ponto> pointsForWells = new ArrayList<Ponto>();
 	private List<Ponto> pointsForStorages = new ArrayList<Ponto>();
 	Calculos calcToGrayOfZoneWells;
-	
+	private final String tipoInstalcao= "well";
 	void init() {
 	}
 
@@ -23,7 +23,7 @@ public class ARTGreyZoneToWells extends Artifact {
 	
 	@OPERATION
 	void buildPolygonForWells() {
-		calcToGrayOfZoneWells = new Calculos( pointsForWells );
+		calcToGrayOfZoneWells = new Calculos( tipoInstalcao,pointsForWells );
 		calcToGrayOfZoneWells.construirPoligono();
 //		System.out.println("INTERNO: construindo o poligono !" );
 	}

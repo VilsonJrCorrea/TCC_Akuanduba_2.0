@@ -18,7 +18,8 @@ roundnumber(0).
 				
 				!!buildPoligonToWells;
 				!!buildPoligonToStorages;
-				!!sendcentrals;
+				!!buildPoligonToWorkshops;
+//				!!sendcentrals;
 				!!exploration;
 				
 				!!callcraftSemParts;							
@@ -50,25 +51,25 @@ roundnumber(0).
 +!agentnumber: true
 	<-
 		?name(N);
-		.delete("akuanduba_udesc",N,R);
+		.delete("akuanduba_distribuido",N,R);
 		+agentid(R);
 	.
 
-+!sendcentrals
-	:	agentid("20")
-	<-	
-		.wait(step(X) & X>0 & X<998);
-//		?centerStorageRule(STORAGE); 
-//		+centerStorage(STORAGE);
-		?centerWorkshopRule(WORKSHOP);
-		+centerWorkshop(WORKSHOP);
-		.broadcast(tell, centerWorkshop(WORKSHOP) );
-//		.broadcast(tell, centerStorage(STORAGE) );
-.
-
-+!sendcentrals : not agentid("20")
-	<- true.
-	
+//+!sendcentrals
+//	:	agentid("20")
+//	<-	
+//		.wait(step(X) & X>0 & X<998);
+////		?centerStorageRule(STORAGE); 
+////		+centerStorage(STORAGE);
+////		?centerWorkshopRule(WORKSHOP);
+////		+centerWorkshop(WORKSHOP);
+////		.broadcast(tell, centerWorkshop(WORKSHOP) );
+////		.broadcast(tell, centerStorage(STORAGE) );
+//.
+//
+//+!sendcentrals : not agentid("20")
+//	<- true.
+//	
 
 //==============================================================
 //@end[atomic]
@@ -81,8 +82,8 @@ roundnumber(0).
    		.drop_all_desires;
 	
 		.abolish(resourceNode(_,_,_,_));
-		.abolish(pointsOfPolygon(_));
-		.abolish(centerWorkshop(_));
+		.abolish(pointsPolygonStorage(_));
+		.abolish(pointsPolygonWorkshop(_));
 		.abolish(chargingStation(_,_,_,_));
 		.abolish(doing(_));
 		.abolish(lastDoing(_));

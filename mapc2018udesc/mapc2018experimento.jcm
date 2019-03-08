@@ -136,143 +136,143 @@ agent akuanduba_distribuido34: agentA.asl{
  join: env
 focus: env.art34, coogather
 }
-//time b
-agent agentB1: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb1
-}
-agent agentB2: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb2
-}
-agent agentB3: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb3
-}
-agent agentB4: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb4
-}
-agent agentB5: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb5
-}
-agent agentB6: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb6
-}
-agent agentB7: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb7
-}
-agent agentB8: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb8
-}
-agent agentB9: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb9
-}
-agent agentB10: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb10
-}
-agent agentB11: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb11
-}
-agent agentB12: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb12
-}
-agent agentB13: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb13
-}
-agent agentB14: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb14
-}
-agent agentB15: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb15
-}
-agent agentB16: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb16
-}
-agent agentB17: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb17
-}
-agent agentB18: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb18
-}
-agent agentB19: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb19
-}
-agent agentB20: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb20
-}
-agent agentB21: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb21
-}
-agent agentB22: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb22
-}
-agent agentB23: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb23
-}
-agent agentB24: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb24
-}
-agent agentB25: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb25
-}
-agent agentB26: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb26
-}
-agent agentB27: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb27
-}
-agent agentB28: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb28
-}
-agent agentB29: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb29
-}
-agent agentB30: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb30
-}
-agent agentB31: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb31
-}
-agent agentB32: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb32
-}
-agent agentB33: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb33
-}
-agent agentB34: agentWithDelay.asl{ 
- join: envb
-focus: envb.artb34
-}
+////time b
+//agent agentB1: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb1
+//}
+//agent agentB2: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb2
+//}
+//agent agentB3: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb3
+//}
+//agent agentB4: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb4
+//}
+//agent agentB5: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb5
+//}
+//agent agentB6: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb6
+//}
+//agent agentB7: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb7
+//}
+//agent agentB8: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb8
+//}
+//agent agentB9: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb9
+//}
+//agent agentB10: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb10
+//}
+//agent agentB11: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb11
+//}
+//agent agentB12: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb12
+//}
+//agent agentB13: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb13
+//}
+//agent agentB14: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb14
+//}
+//agent agentB15: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb15
+//}
+//agent agentB16: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb16
+//}
+//agent agentB17: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb17
+//}
+//agent agentB18: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb18
+//}
+//agent agentB19: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb19
+//}
+//agent agentB20: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb20
+//}
+//agent agentB21: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb21
+//}
+//agent agentB22: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb22
+//}
+//agent agentB23: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb23
+//}
+//agent agentB24: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb24
+//}
+//agent agentB25: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb25
+//}
+//agent agentB26: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb26
+//}
+//agent agentB27: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb27
+//}
+//agent agentB28: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb28
+//}
+//agent agentB29: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb29
+//}
+//agent agentB30: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb30
+//}
+//agent agentB31: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb31
+//}
+//agent agentB32: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb32
+//}
+//agent agentB33: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb33
+//}
+//agent agentB34: agentWithDelay.asl{ 
+// join: envb
+//focus: envb.artb34
+//}
 
 workspace env {
 artifact art1: EISAccess("conf/local/eis0.json")
@@ -316,42 +316,42 @@ artifact coogather: CoordinationArtifact
 }
 
 //
-workspace envb {
-artifact artb1: EISAccess("conf/local/eisb0.json")
-artifact artb2: EISAccess("conf/local/eisb1.json")
-artifact artb3: EISAccess("conf/local/eisb2.json")
-artifact artb4: EISAccess("conf/local/eisb3.json")
-artifact artb5: EISAccess("conf/local/eisb4.json")
-artifact artb6: EISAccess("conf/local/eisb5.json")
-artifact artb7: EISAccess("conf/local/eisb6.json")
-artifact artb8: EISAccess("conf/local/eisb7.json")
-artifact artb9: EISAccess("conf/local/eisb8.json")
-artifact artb10: EISAccess("conf/local/eisb9.json")
-artifact artb11: EISAccess("conf/local/eisb10.json")
-artifact artb12: EISAccess("conf/local/eisb11.json")
-artifact artb13: EISAccess("conf/local/eisb12.json")
-artifact artb14: EISAccess("conf/local/eisb13.json")
-artifact artb15: EISAccess("conf/local/eisb14.json")
-artifact artb16: EISAccess("conf/local/eisb15.json")
-artifact artb17: EISAccess("conf/local/eisb16.json")
-artifact artb18: EISAccess("conf/local/eisb17.json")
-artifact artb19: EISAccess("conf/local/eisb18.json")
-artifact artb20: EISAccess("conf/local/eisb19.json")
-artifact artb21: EISAccess("conf/local/eisb20.json")
-artifact artb22: EISAccess("conf/local/eisb21.json")
-artifact artb23: EISAccess("conf/local/eisb22.json")
-artifact artb24: EISAccess("conf/local/eisb23.json")
-artifact artb25: EISAccess("conf/local/eisb24.json")
-artifact artb26: EISAccess("conf/local/eisb25.json")
-artifact artb27: EISAccess("conf/local/eisb26.json")
-artifact artb28: EISAccess("conf/local/eisb27.json")
-artifact artb29: EISAccess("conf/local/eisb28.json")
-artifact artb30: EISAccess("conf/local/eisb29.json")
-artifact artb31: EISAccess("conf/local/eisb30.json")
-artifact artb32: EISAccess("conf/local/eisb31.json")
-artifact artb33: EISAccess("conf/local/eisb32.json")
-artifact artb34: EISAccess("conf/local/eisb33.json")
-}
+//workspace envb {
+//artifact artb1: EISAccess("conf/local/eisb0.json")
+//artifact artb2: EISAccess("conf/local/eisb1.json")
+//artifact artb3: EISAccess("conf/local/eisb2.json")
+//artifact artb4: EISAccess("conf/local/eisb3.json")
+//artifact artb5: EISAccess("conf/local/eisb4.json")
+//artifact artb6: EISAccess("conf/local/eisb5.json")
+//artifact artb7: EISAccess("conf/local/eisb6.json")
+//artifact artb8: EISAccess("conf/local/eisb7.json")
+//artifact artb9: EISAccess("conf/local/eisb8.json")
+//artifact artb10: EISAccess("conf/local/eisb9.json")
+//artifact artb11: EISAccess("conf/local/eisb10.json")
+//artifact artb12: EISAccess("conf/local/eisb11.json")
+//artifact artb13: EISAccess("conf/local/eisb12.json")
+//artifact artb14: EISAccess("conf/local/eisb13.json")
+//artifact artb15: EISAccess("conf/local/eisb14.json")
+//artifact artb16: EISAccess("conf/local/eisb15.json")
+//artifact artb17: EISAccess("conf/local/eisb16.json")
+//artifact artb18: EISAccess("conf/local/eisb17.json")
+//artifact artb19: EISAccess("conf/local/eisb18.json")
+//artifact artb20: EISAccess("conf/local/eisb19.json")
+//artifact artb21: EISAccess("conf/local/eisb20.json")
+//artifact artb22: EISAccess("conf/local/eisb21.json")
+//artifact artb23: EISAccess("conf/local/eisb22.json")
+//artifact artb24: EISAccess("conf/local/eisb23.json")
+//artifact artb25: EISAccess("conf/local/eisb24.json")
+//artifact artb26: EISAccess("conf/local/eisb25.json")
+//artifact artb27: EISAccess("conf/local/eisb26.json")
+//artifact artb28: EISAccess("conf/local/eisb27.json")
+//artifact artb29: EISAccess("conf/local/eisb28.json")
+//artifact artb30: EISAccess("conf/local/eisb29.json")
+//artifact artb31: EISAccess("conf/local/eisb30.json")
+//artifact artb32: EISAccess("conf/local/eisb31.json")
+//artifact artb33: EISAccess("conf/local/eisb32.json")
+//artifact artb34: EISAccess("conf/local/eisb33.json")
+//}
 
  asl-path: src/agt
 src/agt/inc

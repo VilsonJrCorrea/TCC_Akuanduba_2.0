@@ -20,6 +20,7 @@
 { include("construcao_pocos.asl")}
 { include("restartround.asl")}
 { include("distribution_storages.asl")}
+{ include("distribution_workshops.asl")}
 { include("huntwell.asl") }
 { include("dropall.asl") }
 { include("areacritica.asl") }

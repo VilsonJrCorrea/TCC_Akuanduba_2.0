@@ -8,16 +8,16 @@ import jason.asSyntax.ASSyntax;
 import jason.asSyntax.Literal;
 import jason.asSyntax.parser.ParseException;
 
-public class ARTGreyZoneToStorages extends Artifact {
-	private List<Ponto> pointsForStorages = new ArrayList<Ponto>();
+public class ARTGreyZoneToWorkshops extends Artifact {
+	private List<Ponto> points = new ArrayList<Ponto>();
 	Calculos calcToGrayOfStorages;
-	private final String tipoInstalacao = "storage";
+	private final String tipoInstalacao = "workshop";
 	void init() {
 	}
 
 	@OPERATION
 	void addPoint( String name,double x, double y) {
-		pointsForStorages.add( new Ponto(name, x, y) );
+		points.add( new Ponto(name, x, y) );
 	}
 	
 	@OPERATION
@@ -28,20 +28,20 @@ public class ARTGreyZoneToStorages extends Artifact {
 //	
 	
 	@OPERATION
-	void buildPolygonForStorages() {
-		calcToGrayOfStorages = new Calculos( tipoInstalacao,pointsForStorages );
+	void buildPolygonForWorkshop() {
+		calcToGrayOfStorages = new Calculos( tipoInstalacao,points );
 		calcToGrayOfStorages.construirPoligono();
 //		System.out.println("INTERNO: construindo o poligono !" );
 	}
 	
 	@OPERATION
 	void dismantlePolygonOfStorages() {
-		pointsForStorages.clear();
+		points.clear();
 		calcToGrayOfStorages = null;
 	}
 	
 	@OPERATION
-	void getPolygonOfStorages( OpFeedbackParam<Literal> retorno ) {
+	void getPolygonOfWorkshops( OpFeedbackParam<Literal> retorno ) {
 		try {
 			retorno.set(ASSyntax.parseLiteral( calcToGrayOfStorages.getPolygonToBelief() ) );
 		} catch (ParseException e) {

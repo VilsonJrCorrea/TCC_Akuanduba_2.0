@@ -35,7 +35,7 @@
 	<-		
 		.findall(X,numberAgRequired(_,X),LTMP);
 		+numberTotalCraft(math.sum(LTMP));
-		if(name(akuanduba_udesc1)){
+		if(name(akuanduba_distribuido1)){
 			.print(numberTotalCraft(math.sum(LTMP)));
 		}		
 		!!callCraftComParts;
@@ -49,7 +49,7 @@
 						numberTotalCraft(NTC)				&
 						.count(craftCommitment(_,_))<=NTC	&
 						whatStorageUse(STORAGE) 				&	
-						centerWorkshop(WORKSHOP) 			&
+						whatWorkshopUse(WORKSHOP) 			&
 						not craftCommitment(NAMEAGENT,_) 	&
 						not gatherCommitment(NAMEAGENT,_)
 		<-
@@ -93,7 +93,7 @@
 		role(ROLE,_,_,LOAD,_,_,_,_,_,_,_)  										&
 		name(NAMEAGENT) 														&
 		whatStorageUse(STORAGE) 													&	
-		centerWorkshop(WORKSHOP) 												&
+		whatWorkshopUse(WORKSHOP) 												&
 		craftCommitment(NAMEAGENT,ITEM) 										
 	<-				
 		.wait(not task(fastgathering,_,_,_));
@@ -111,7 +111,7 @@
 	.
 
 +!supportCraft(OTHERROLES):
-				name(WHONEED) & centerWorkshop(WORKSHOP)
+				name(WHONEED) & whatWorkshopUse(WORKSHOP)
 			<-	
 				 PID = math.floor(math.random(100000));
 				 !!selectiveBroadcast(OTHERROLES,PID,WORKSHOP);					
@@ -141,7 +141,7 @@
 +helper(PID, COST): .count(helper(PID, _),N) & N>1 & not demanded_assist(PID)
 	<-
 		?name(WHONEED);
-		?centerWorkshop(WORKSHOP);
+		?whatWorkshopUse(WORKSHOP);
 		?lesscost (PID, AGENT);
 		+demanded_assist(PID);
 		.send (AGENT, achieve, confirmhelp( WORKSHOP, WHONEED));
