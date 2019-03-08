@@ -1,5 +1,5 @@
 +!buildPoligonToStorages
-	:	agentid("21")
+	:	agentid("19")
 	<-	
 		.wait(step(10));
 		for(storage(NAME,X,Y,_,_,_)) {
@@ -19,6 +19,6 @@
 		.broadcast(tell, POINTSADJUSTED );
 		
 	.
-+!buildPoligonToStorages : not agentid("21")
++!buildPoligonToStorages : not agentid("19")
 	<- true.
 
