@@ -18,8 +18,8 @@ roundnumber(0).
 				
 				!!buildPoligonToWells;
 				!!buildPoligonToStorages;
-				!!buildPoligonToWorkshops;
-//				!!sendcentrals;
+//				!!buildPoligonToWorkshops;
+				!!sendcentrals;
 				!!exploration;
 				
 				!!callcraftSemParts;							
@@ -55,21 +55,21 @@ roundnumber(0).
 		+agentid(R);
 	.
 
-//+!sendcentrals
-//	:	agentid("20")
-//	<-	
-//		.wait(step(X) & X>0 & X<998);
-////		?centerStorageRule(STORAGE); 
-////		+centerStorage(STORAGE);
-////		?centerWorkshopRule(WORKSHOP);
-////		+centerWorkshop(WORKSHOP);
-////		.broadcast(tell, centerWorkshop(WORKSHOP) );
-////		.broadcast(tell, centerStorage(STORAGE) );
-//.
-//
-//+!sendcentrals : not agentid("20")
-//	<- true.
-//	
++!sendcentrals
+	:	agentid("20")
+	<-	
+		.wait(step(X) & X>0 & X<998);
+//		?centerStorageRule(STORAGE); 
+//		+centerStorage(STORAGE);
+		?centerWorkshopRule(WORKSHOP);
+		+centerWorkshop(WORKSHOP);
+		.broadcast(tell, centerWorkshop(WORKSHOP) );
+//		.broadcast(tell, centerStorage(STORAGE) );
+.
+
++!sendcentrals : not agentid("20")
+	<- true.
+	
 
 //==============================================================
 //@end[atomic]
