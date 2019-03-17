@@ -1,14 +1,14 @@
 package mapc2018udesc;
 
-
-import org.junit.Before;
 import java.awt.Desktop;
 import java.net.URI;
+
+import org.junit.Before;
 import jacamo.infra.JaCaMoLauncher;
 import org.junit.Test;
 import massim.Server;
 import jason.JasonException;
-public class RunLaPlata {
+public class RunExperimentoSaoPaulo {
 
 	@Before
 	public void setUp() {
@@ -16,12 +16,11 @@ public class RunLaPlata {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-				try {	
+				try {
 					if (Desktop.isDesktopSupported()) {
 					    Desktop.getDesktop().browse(new URI("http://127.0.0.1:8000"));
 					}
-					Server.main(new String[] {"-conf", "conf/laplata.json", "--monitor"});
-					
+					Server.main(new String[] {"-conf", "conf/Experimento-SaoPaulo.json", "--monitor"});					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -29,7 +28,7 @@ public class RunLaPlata {
 		}).start();
 
 		try {
-			JaCaMoLauncher.main(new String[] {"mapc2018teste.jcm"});
+			JaCaMoLauncher.main(new String[] {"mapc2018experimento.jcm"});
 		} catch (JasonException e) {
 			System.out.println("Exception: "+e.getMessage());
 			e.printStackTrace();

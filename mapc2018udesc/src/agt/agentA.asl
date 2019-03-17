@@ -3,24 +3,15 @@
 { include("exploration.asl") }
 { include("gathering.asl") }
 { include("fastgathering.asl") }
-//{ include("fastgatheringDoCrafting4.asl") }
-//{ include("crafting4.asl") }
-//{ include("crafting1.asl") }
-//{ include("crafting2.asl") }
-//{ include("crafting3.asl") }
 { include("crafting5.asl") }
-//{ include("crafting6.asl") }
 { include("charging.asl") }		
 { include("regras.asl") }
 { include("job.asl") }
-//{ include("job2.asl")}
-//{ include("job3.asl") }
 { include("mission.asl") }
-//{ include("mission2.asl") }
 { include("construcao_pocos.asl")}
 { include("restartround.asl")}
 { include("distribution_storages.asl")}
-{ include("distribution_workshops.asl")}
+//{ include("distribution_workshops.asl")}
 { include("huntwell.asl") }
 { include("dropall.asl") }
 { include("areacritica.asl") }

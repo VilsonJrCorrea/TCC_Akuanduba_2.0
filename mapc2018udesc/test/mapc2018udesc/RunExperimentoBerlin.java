@@ -1,12 +1,14 @@
 package mapc2018udesc;
+
 import java.awt.Desktop;
 import java.net.URI;
+
 import org.junit.Before;
 import jacamo.infra.JaCaMoLauncher;
 import org.junit.Test;
 import massim.Server;
 import jason.JasonException;
-public class RunMadrid {
+public class RunExperimentoBerlin {
 
 	@Before
 	public void setUp() {
@@ -18,7 +20,7 @@ public class RunMadrid {
 					if (Desktop.isDesktopSupported()) {
 					    Desktop.getDesktop().browse(new URI("http://127.0.0.1:8000"));
 					}
-					Server.main(new String[] {"-conf", "conf/madrid.json", "--monitor"});					
+					Server.main(new String[] {"-conf", "conf/Experimento-Berlin.json", "--monitor"});					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -26,7 +28,7 @@ public class RunMadrid {
 		}).start();
 
 		try {
-			JaCaMoLauncher.main(new String[] {"jcm/local/mapc2018teste.jcm"});
+			JaCaMoLauncher.main(new String[] {"mapc2018teste.jcm"});
 		} catch (JasonException e) {
 			System.out.println("Exception: "+e.getMessage());
 			e.printStackTrace();
