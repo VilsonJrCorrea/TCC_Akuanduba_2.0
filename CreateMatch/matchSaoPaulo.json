@@ -3,7 +3,7 @@
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -44,7 +44,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -59,13 +59,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -106,7 +106,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -121,13 +121,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -168,7 +168,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -183,13 +183,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -230,7 +230,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -245,13 +245,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -292,7 +292,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -307,13 +307,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -354,7 +354,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -369,13 +369,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -416,7 +416,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -431,13 +431,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -478,7 +478,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -493,13 +493,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -540,7 +540,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -555,13 +555,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -602,7 +602,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -617,13 +617,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -664,7 +664,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -679,13 +679,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -726,7 +726,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -741,13 +741,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -788,7 +788,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -803,13 +803,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -850,7 +850,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -865,13 +865,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -912,7 +912,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -927,13 +927,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -974,7 +974,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -989,13 +989,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1036,7 +1036,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1051,13 +1051,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1098,7 +1098,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1113,13 +1113,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1160,7 +1160,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1175,13 +1175,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1222,7 +1222,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1237,13 +1237,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1284,7 +1284,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1299,13 +1299,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1346,7 +1346,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1361,13 +1361,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1408,7 +1408,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1423,13 +1423,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1470,7 +1470,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1485,13 +1485,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1532,7 +1532,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1547,13 +1547,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1594,7 +1594,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1609,13 +1609,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1656,7 +1656,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1671,13 +1671,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1718,7 +1718,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1733,13 +1733,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1780,7 +1780,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1795,13 +1795,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1842,7 +1842,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1857,13 +1857,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1904,7 +1904,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1919,13 +1919,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -1966,7 +1966,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -1981,13 +1981,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2028,7 +2028,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2043,13 +2043,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2090,7 +2090,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2105,13 +2105,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2152,7 +2152,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2167,13 +2167,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2214,7 +2214,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2229,13 +2229,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2276,7 +2276,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2291,13 +2291,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2338,7 +2338,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2353,13 +2353,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2400,7 +2400,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2415,13 +2415,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2462,7 +2462,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2477,13 +2477,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2524,7 +2524,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2539,13 +2539,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2586,7 +2586,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2601,13 +2601,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2648,7 +2648,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2663,13 +2663,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2710,7 +2710,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2725,13 +2725,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2772,7 +2772,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2787,13 +2787,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2834,7 +2834,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2849,13 +2849,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2896,7 +2896,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2911,13 +2911,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -2958,7 +2958,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -2973,13 +2973,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -3020,7 +3020,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -3035,13 +3035,13 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     },
     {
         "id": "SaoPaulo",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
-        "map": "saopaulo",
+        "map": "../saopaulo",
         "seedCapital": 5000,
         "minLon": -46.73,
         "maxLon": -46.53,
@@ -3082,7 +3082,7 @@
                 "step": 5
             }
         ],
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": [
             {
                 "drone": 4
@@ -3097,6 +3097,6 @@
                 "truck": 12
             }
         ],
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     }
 ]

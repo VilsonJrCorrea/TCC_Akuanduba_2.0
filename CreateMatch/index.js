@@ -3,11 +3,13 @@ var fs = require('fs');
 const upgrade = require('./upgrades')
 const entities = require('./entities');
 
+const prefix = "../";
+
 main();
 
 function main() {
     ids = ["Berlin", "Copenhagen", "SaoPaulo", "Paris"];
-    maps = ["berlin", "copenhagen", "saopaulo", "paris"];
+    maps = ["../berlin", "../copenhagen", "../saopaulo", "../paris"];
     minLons = [13.35, 12.47, -46.73, 2.26];
     maxLons = [13.5, 12.58, -46.53, 2.41];
     minLats = [52.44, 55.6, -23.65, 48.82];
@@ -54,9 +56,9 @@ function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, c
         "gotoCost": 1,
         "rechargeRate": 0.3,
         "upgrades": upgrade,
-        "roles": "$(roles/roles.json)",
+        "roles": "$(../roles/roles.json)",
         "entities": entities,
-        "generate": "$(generate/generate.json)"
+        "generate": "$(../generate/generate.json)"
     }
 }
 
