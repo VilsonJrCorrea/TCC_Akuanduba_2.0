@@ -38,7 +38,7 @@ function writeFile(data, name) {
 
 function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, centerLon, seed) {
     return match = {
-        "id": id,
+        "id": id+"-"+seed,
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": map,
