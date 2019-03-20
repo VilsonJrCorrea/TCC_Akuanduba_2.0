@@ -1,31 +1,31 @@
 package model;
 
 public class Time {
-
     private String nome;
-    private int partidas;
+    private double somatorioMassiumJob;
+    private double somatorioMassiunMission;
+    private double somatioMassiumAuctionJob;
     private double somatorioMassium;
-    private int qtdJobComum;
-    private int qtdMission;
-    private int qtdTotalJobs;
-    private double mediaMassium;
-    private double dpMassium;
-    private double mediaJobComum;
-    private double dpJobComum;
-    private double mediaMission;
-    private double dpMission;
+    private int qtdJobComumAtendido;
+    private int qtdMissionAtendido;
+    private int qtdAuctionJobAtendido;
+    private double proporcaoJob;
+    private double proporcaoMission;
 
-
-    public Time(String nome, int partidas, double somatorioMassium, int qtdTotalJobs) {
+    public Time(String nome, double somatorioMassiumJob, double somatorioMassiunMission, double somatioMassiumAuctionJob, double somatorioMassium, int qtdJobComumAtendido, int qtdMissionAtendido, int qtdAuctionJobAtendido, double proporcaoJob, double proporcaoMission) {
         this.nome = nome;
-        this.partidas = partidas;
+        this.somatorioMassiumJob = somatorioMassiumJob;
+        this.somatorioMassiunMission = somatorioMassiunMission;
+        this.somatioMassiumAuctionJob = somatioMassiumAuctionJob;
         this.somatorioMassium = somatorioMassium;
-        this.qtdTotalJobs = qtdTotalJobs;
+        this.qtdJobComumAtendido = qtdJobComumAtendido;
+        this.qtdMissionAtendido = qtdMissionAtendido;
+        this.qtdAuctionJobAtendido = qtdAuctionJobAtendido;
+        this.proporcaoJob = proporcaoJob;
+        this.proporcaoMission = proporcaoMission;
     }
 
-    public Time(String nome, int partidas) {
-        this.nome = nome;
-        this.partidas = partidas;
+    public Time() {
     }
 
     public String getNome() {
@@ -44,101 +44,84 @@ public class Time {
         this.somatorioMassium = somatorioMassium;
     }
 
-    public int getQtdTotalJobs() {
-        return qtdTotalJobs;
+    public int getQtdJobComumAtendido() {
+        return qtdJobComumAtendido;
     }
 
-    public void setQtdTotalJobs(int qtdTotalJobs) {
-        this.qtdTotalJobs = qtdTotalJobs;
+    public void setQtdJobComumAtendido(int qtdJobComumAtendido) {
+        this.qtdJobComumAtendido = qtdJobComumAtendido;
     }
 
-    public int getPartidas() {
-        return partidas;
+    public int getQtdAuctionJobAtendido() {
+        return qtdAuctionJobAtendido;
     }
 
-    public void setPartidas(int partidas) {
-        this.partidas = partidas;
+    public void setQtdAuctionJobAtendido(int qtdAuctionJobAtendido) {
+        this.qtdAuctionJobAtendido = qtdAuctionJobAtendido;
     }
 
-    public int getQtdJobComum() {
-        return qtdJobComum;
+    public int getQtdMissionAtendido() {
+        return qtdMissionAtendido;
     }
 
-    public void setQtdJobComum(int qtdJobComum) {
-        this.qtdJobComum = qtdJobComum;
+    public void setQtdMissionAtendido(int qtdMissionAtendido) {
+        this.qtdMissionAtendido = qtdMissionAtendido;
     }
 
-    public int getQtdMission() {
-        return qtdMission;
+    public double getProporcaoJob() {
+        return proporcaoJob;
     }
 
-    public void setQtdMission(int qtdMission) {
-        this.qtdMission = qtdMission;
+    public void setProporcaoJob(double proporcaoJob) {
+        this.proporcaoJob = proporcaoJob;
     }
 
-    public double getMediaMassium() {
-        return mediaMassium;
+    public double getProporcaoMission() {
+        return proporcaoMission;
     }
 
-    public void setMediaMassium(double mediaMassium) {
-        this.mediaMassium = mediaMassium;
+    public void setProporcaoMission(double proporcaoMission) {
+        this.proporcaoMission = proporcaoMission;
     }
 
-    public double getDpMassium() {
-        return dpMassium;
+    public double getSomatorioMassiumJob() {
+        return somatorioMassiumJob;
     }
 
-    public void setDpMassium(double dpMassium) {
-        this.dpMassium = dpMassium;
+    public void setSomatorioMassiumJob(double somatorioMassiumJob) {
+        this.somatorioMassiumJob = somatorioMassiumJob;
     }
 
-    public double getMediaJobComum() {
-        return mediaJobComum;
+    public double getSomatorioMassiunMission() {
+        return somatorioMassiunMission;
     }
 
-    public void setMediaJobComum(double mediaJobComum) {
-        this.mediaJobComum = mediaJobComum;
+    public void setSomatorioMassiunMission(double somatorioMassiunMission) {
+        this.somatorioMassiunMission = somatorioMassiunMission;
     }
 
-    public double getDpJobComum() {
-        return dpJobComum;
+    public double getSomatioMassiumAuctionJob() {
+        return somatioMassiumAuctionJob;
     }
 
-    public void setDpJobComum(double dpJobComum) {
-        this.dpJobComum = dpJobComum;
-    }
-
-    public double getMediaMission() {
-        return mediaMission;
-    }
-
-    public void setMediaMission(double mediaMission) {
-        this.mediaMission = mediaMission;
-    }
-
-    public double getDpMission() {
-        return dpMission;
-    }
-
-    public void setDpMission(double dpMission) {
-        this.dpMission = dpMission;
+    public void setSomatioMassiumAuctionJob(double somatioMassiumAuctionJob) {
+        this.somatioMassiumAuctionJob = somatioMassiumAuctionJob;
     }
 
     @Override
     public String toString() {
         return "Time{" +
-                "\n\tNome='" + nome + '\'' +
-                "\n\tPartidas=" + partidas +
-                "\n\tQtdTotalJobs=" + qtdTotalJobs +
-                "\n\tSomatorioMassium=" + somatorioMassium +
-                "\n\tMediaMassium=" + mediaMassium +
-                "\n\tDesvio Padrão Massium=" + dpMassium +
-                "\n\tQtdJobComum=" + qtdJobComum +
-                "\n\tMediaJobComum=" + mediaJobComum +
-                "\n\tDesvio Padrão JobComum=" + dpJobComum +
-                "\n\tQtdMission=" + qtdMission +
-                "\n\tMediaMission=" + mediaMission +
-                "\n\tDesvio Padrão Mission=" + dpMission +
-                "\n}";
+                "nome='" + nome + '\'' +
+                ", somatorioMassiumJob=" + somatorioMassiumJob +
+                ", somatorioMassiunMission=" + somatorioMassiunMission +
+                ", somatioMassiumAuctionJob=" + somatioMassiumAuctionJob +
+                ", somatorioMassium=" + somatorioMassium +
+                ", qtdJobComumAtendido=" + qtdJobComumAtendido +
+                ", qtdMissionAtendido=" + qtdMissionAtendido +
+                ", qtdAuctionJobAtendido=" + qtdAuctionJobAtendido +
+                ", proporcaoJob=" + proporcaoJob +
+                ", proporcaoMission=" + proporcaoMission +
+                '}';
     }
 }
+
