@@ -23,7 +23,7 @@ function main() {
             data.push(obj);
             if (i % 5 == 0) {
                 const p = i / 5;
-                writeFile(data, ids[j], "match" + p);
+                writeFile(data, ids[j], "Match" + p);
                 data = [];
                 const fileServer = getObjectToFile(ids[j], p);
                 writeFile(fileServer, ids[j], "Experimento" + p);
@@ -33,7 +33,7 @@ function main() {
 }
 
 function writeFile(data, nameCity, nameFile) {
-    fs.writeFile(nameFile + nameCity + ".json", JSON.stringify(data, null, 4), (err) => {
+    fs.writeFile(nameCity + nameFile + ".json", JSON.stringify(data, null, 4), (err) => {
         if (err) {
             console.log(err);
             return;
@@ -71,7 +71,7 @@ function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, c
 function getObjectToFile(id, contFile) {
     return abc = {
         "server": "$(server/server.json)",
-        "match": "$(match/match" + contFile + id + ".json)",
+        "match": "$(match/" + id + "Match" + contFile + ".json)",
         "teams": {
             "A": "$(teams/A.json)",
             "B": "$(teams/B.json)"
