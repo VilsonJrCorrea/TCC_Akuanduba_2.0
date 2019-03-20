@@ -28,7 +28,7 @@ public class RunExperimentoParis {
 		}).start();
 
 		try {
-			JaCaMoLauncher.main(new String[] {"mapc2018experimento.jcm"});
+			JaCaMoLauncher.main(new String[] {"mapc2018teste.jcm"});
 		} catch (JasonException e) {
 			System.out.println("Exception: "+e.getMessage());
 			e.printStackTrace();

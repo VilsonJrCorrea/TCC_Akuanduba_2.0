@@ -231,8 +231,7 @@ public class Calculos {
 	}
 
 	private void acharExtremos() {
-		maisAcima = maisDireita = new Ponto("", Double.MIN_VALUE, Double.MIN_VALUE);
-		maisAbaixo = maisEsquerda = new Ponto("", Double.MAX_VALUE, Double.MAX_VALUE);
+		maisAcima = maisDireita =maisAbaixo = maisEsquerda = pontosNaoCalculados.get( 0 );
 
 		for (Ponto p : pontosNaoCalculados) {
 			if (maisAcima.getY() < p.getY()) {
@@ -256,6 +255,7 @@ public class Calculos {
 		pontosNaoCalculados.remove(maisAbaixo);
 		pontosNaoCalculados.remove(maisEsquerda);
 		pontosNaoCalculados.remove(maisDireita);
+		
 
 		retasPoligono.add(new Reta(maisAbaixo, maisDireita));
 		retasPoligono.add(new Reta(maisDireita, maisAcima));
