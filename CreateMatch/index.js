@@ -17,28 +17,34 @@ function main() {
     centerLats = [52.5, 55.65, -23.6, 48.8424];
     centerLons = [13.4, 12.5, -46.6, 2.3209];
     for (j = 0; j < 4; j++) {
-        const data = [];
-        for (i = 0; i < 50; i++) {
+        let data = [];
+        for (i = 1; i <= 50; i++) {
             const obj = createObjectMatch(ids[j], maps[j], maxLats[j], maxLons[j], minLats[j], minLons[j], centerLats[j], centerLons[j], i);
             data.push(obj);
+            if (i % 5 == 0) {
+                const p = i / 5;
+                writeFile(data, ids[j], "match" + p);
+                data = [];
+                const fileServer = getObjectToFile(ids[j], p);
+                writeFile(fileServer, ids[j], "Experimento" + p);
+            }
         }
-        writeFile(data, ids[j]);
     }
 }
 
-function writeFile(data, name) {
-    fs.writeFile("match" + name + ".json", JSON.stringify(data, null, 4), (err) => {
+function writeFile(data, nameCity, nameFile) {
+    fs.writeFile(nameFile + nameCity + ".json", JSON.stringify(data, null, 4), (err) => {
         if (err) {
             console.log(err);
             return;
         }
-        console.log("Arquivo gravado com sucesso!")
+        console.log("Arquivo " + nameFile + "" + nameCity + " gravado com sucesso!")
     })
 }
 
 function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, centerLon, seed) {
     return match = {
-        "id": id+"-"+seed,
+        "id": id + "-" + seed,
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": map,
@@ -62,4 +68,14 @@ function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, c
     }
 }
 
-// console.log(obj);
+function getObjectToFile(id, contFile) {
+    return abc = {
+        "server": "$(server/server.json)",
+        "match": "$(match/match" + contFile + id + ".json)",
+        "teams": {
+            "A": "$(teams/A.json)",
+            "B": "$(teams/B.json)"
+        }
+    }
+
+}
