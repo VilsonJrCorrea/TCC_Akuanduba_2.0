@@ -2,7 +2,6 @@ import model.Partida;
 import model.Time;
 import util.File;
 import util.SaveInExcel;
-import util.UpdateTime;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,18 +25,18 @@ public class Main {
     public static void main(String[] args) {
         List<String> conteudo = File.getDadosPartidas();
         List<Partida> partidas = new ArrayList<>();
-        Time objTimeA = new Time(timeA, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-        Time objTimeB = new Time(timeB, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        Time objTimeA = null;
+        Time objTimeB = null;
         Partida partida = null;
         int i;
 
         for (String linha : conteudo) {
             if (linha.contains(configuringSeed)) {
                 i = Integer.parseInt(linha.split(": ", 0)[1]);
-                if (partida != null) {
-                    partidas.add(partida);
-                }
+                objTimeA = new Time(timeA, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                objTimeB = new Time(timeB, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                 partida = new Partida(i, 0, objTimeA, objTimeB);
+                partidas.add(partida);
             } else if (linha.contains(newId)) {
                 String s = linha.split(newId, 0)[1];
                 partida.setId(s);

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class File {
     private static final int TAMANHO_AMOSTRA = 50;
-    private static final String nomeArquivo = "MASSim-log-2019-03-12-14-33-47.log";
+    private static final String nomeArquivo = "paris1.log";
     private static final String fimDaPartida = "Simulation at step 999";
     private static FileReader ler = null;
     private static BufferedReader reader;
