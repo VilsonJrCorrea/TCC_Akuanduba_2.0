@@ -19,7 +19,9 @@ function main() {
     for (j = 0; j < 4; j++) {
         let data = [];
         for (i = 1; i <= 50; i++) {
-            const obj = createObjectMatch(ids[j], maps[j], maxLats[j], maxLons[j], minLats[j], minLons[j], centerLats[j], centerLons[j], i);
+            let seed = parseInt(Math.random() * 10000);
+            const obj = createObjectMatch(ids[j], maps[j], maxLats[j], maxLons[j], minLats[j], minLons[j],
+                centerLats[j], centerLons[j], i, seed);
             data.push(obj);
             if (i % 5 == 0) {
                 const p = i / 5;
@@ -42,9 +44,9 @@ function writeFile(data, nameCity, nameFile) {
     })
 }
 
-function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, centerLon, seed) {
+function createObjectMatch(id, map, maxLat, maxLon, minLat, minLon, centerLat, centerLon, i, seed) {
     return match = {
-        "id": id + "-" + seed,
+        "id": id + "-" + i + "-seed-" + seed,
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": map,
