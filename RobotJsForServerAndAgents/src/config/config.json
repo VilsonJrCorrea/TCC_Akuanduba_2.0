@@ -1,0 +1,8 @@
+{
+    "delayLeituraPontos": 3000,
+    "delayMouse": 3000,
+    "delayTeclado": 3000,
+    "tempoPartida": 60000,
+    "posicaoServidor": 0,
+    "qtdPositions": 5
+}

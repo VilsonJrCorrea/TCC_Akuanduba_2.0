@@ -1,7 +1,8 @@
 const robot = require("robotjs");
 const { getPositions } = require('../commom/positions')
 const { writeAndEnter, moveAndClick, pressEnter, pressCrtlC } = require('../commom/commands')
-const { qtdPositions, partidas, posicaoServidor, delayMouse, delayTeclado, tempoPartida } = require('../config/config.json')
+const { qtdPositions, posicaoServidor, delayMouse, delayTeclado, tempoPartida } = require('../config/config.json')
+const { partidas } = require('../config/getPartidas')
 
 main();
 
@@ -57,11 +58,11 @@ async function dropAgents(positions, contPartida) {
 	for (i = 3; i < positions.length; i++) {
 		await moveAndClick(positions[i]);
 	}
-	console.log(`Agentes da partida ${contPartida}/${partidas.length-1} derrubados!`)
+	console.log(`Agentes da partida ${contPartida}/${partidas.length - 1} derrubados!`)
 }
 
 async function closeMatch(position, contPartida) {
 	await moveAndClick(position);
 	await pressCrtlC();
-	console.log(`Partida ${contPartida}/${partidas.length-1} encerrada!`)
+	console.log(`Partida ${contPartida}/${partidas.length - 1} encerrada!`)
 }
