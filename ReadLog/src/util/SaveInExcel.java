@@ -35,7 +35,7 @@ public class SaveInExcel {
     };
 
 
-    public static void save(List<Partida> partidas) throws IOException, InvalidFormatException {
+    public static void save(List<Partida> partidas, String nomeMap) throws IOException, InvalidFormatException {
         Workbook workbook = new HSSFWorkbook();// new HSSFWorkbook() for generating `.xls` file
         CreationHelper createHelper = workbook.getCreationHelper();
 
@@ -82,7 +82,7 @@ public class SaveInExcel {
             sheet.autoSizeColumn(i);
         }
 
-        FileOutputStream fileOut = new FileOutputStream(partidas.get(0).getId() + ".xls");
+        FileOutputStream fileOut = new FileOutputStream("results/" + nomeMap + ".xls");
         workbook.write(fileOut);
         fileOut.close();
     }

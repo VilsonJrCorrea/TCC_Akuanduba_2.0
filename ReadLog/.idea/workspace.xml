@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7242567-43b7-4733-bb3c-c0a7950423de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Berlin-1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Copenhagen-1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paris-1.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paris.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Calculos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/File.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/SaveInExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/SaveInExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/UpdateTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/bin/mapc2018udesc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/bin/mapc2018udesc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/bin/teste.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/src/agt/sample_agent.asl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../teste/teste.jcm" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,26 +35,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state relative-caret-position="145">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48127">
-              <caret line="2831" column="40" selection-start-line="2831" selection-start-column="40" selection-end-line="2831" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+            <state relative-caret-position="359">
+              <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Partida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="315">
               <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="e#580#581#0" expanded="true" />
@@ -68,14 +73,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/util/File.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/ReadFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+            <state relative-caret-position="77">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#907#915#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/Teste.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -130,9 +145,11 @@
         <option value="$PROJECT_DIR$/src/util/UpdateTime.java" />
         <option value="$PROJECT_DIR$/src/model/Partida.java" />
         <option value="$PROJECT_DIR$/src/model/Time.java" />
-        <option value="$PROJECT_DIR$/src/util/SaveInExcel.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/util/File.java" />
+        <option value="$PROJECT_DIR$/src/util/Teste.java" />
+        <option value="$PROJECT_DIR$/src/util/ReadFiles.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/util/SaveInExcel.java" />
       </list>
     </option>
   </component>
@@ -150,6 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,14 +196,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553193891152" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554161347422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -213,6 +230,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReadFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.ReadFiles" />
+      <module name="ReadLog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaveInExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.SaveInExcel" />
       <module name="ReadLog" />
@@ -229,6 +259,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ReadFiles" />
         <item itemvalue="Application.SaveInExcel" />
       </list>
     </recent_temporary>
@@ -250,17 +281,17 @@
       <workItem from="1553086655537" duration="730000" />
       <workItem from="1553174131999" duration="961000" />
       <workItem from="1553192825323" duration="982000" />
+      <workItem from="1554157745421" duration="3606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11637000" />
+    <option name="totallyTimeSpent" value="15243000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,7 +300,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35102925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3502455" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,6 +328,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/util/Calculos.java" />
     <entry file="file://$PROJECT_DIR$/src/util/UpdateTime.java" />
+    <entry file="file://$PROJECT_DIR$/copenhagen1.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="8123" column="38" selection-start-line="8123" selection-start-column="38" selection-end-line="8123" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48127">
@@ -304,9 +342,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Teste.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Partida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="315">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="e#580#581#0" expanded="true" />
@@ -322,41 +374,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Time.java">
+    <entry file="file://$PROJECT_DIR$/src/util/ReadFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+        <state relative-caret-position="77">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#907#915#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copenhagen1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="8123" column="38" selection-start-line="8123" selection-start-column="38" selection-end-line="8123" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="145">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/File.java">
+    <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="359">
+          <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

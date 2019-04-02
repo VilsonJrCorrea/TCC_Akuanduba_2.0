@@ -1,11 +1,12 @@
 import model.Partida;
 import model.Time;
-import util.File;
+import util.ReadFiles;
 import util.SaveInExcel;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
 
@@ -23,81 +24,84 @@ public class Main {
     private static final String newAuctionJob = "New AuctionJob: ";
 
     public static void main(String[] args) {
-        List<String> conteudo = File.getDadosPartidas();
-        List<Partida> partidas = new ArrayList<>();
-        Time objTimeA = null;
-        Time objTimeB = null;
-        Partida partida = null;
-        int i;
+        Map<String, List<String>> conteudoDosLog = ReadFiles.getDadosPartidas();
 
-        for (String linha : conteudo) {
-            if (linha.contains(configuringSeed)) {
-                i = Integer.parseInt(linha.split(": ", 0)[1]);
-                objTimeA = new Time(timeA, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-                objTimeB = new Time(timeB, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-                partida = new Partida(i, 0, objTimeA, objTimeB);
-                partidas.add(partida);
-            } else if (linha.contains(newId)) {
-                String s = linha.split(newId, 0)[1];
-                partida.setId(s);
-            } else if (linha.contains(newJob)) {
-                i = partida.getQtdJobComum();
-                partida.setQtdJobComum(i + 1);
-            } else if (linha.contains(newMission)) {
-                i = partida.getQtdMission();
-                partida.setQtdMission(i + 1);
-            } else if (linha.contains(newAuctionJob)) {
-                i = partida.getQtdAuctionJob();
-                partida.setQtdAuctionJob(i + 1);
-            } else if (linha.contains(jobCompleted)) {
-                String s = linha.split("type\\(", 0)[1].split("\\)")[0];
-                double r = Double.parseDouble(linha.split("reward\\(", 0)[1].split("\\)")[0]);
-                if (linha.contains(jobCompleted + timeA)) {
-                    if (s.equals(job)) {
-                        interateJobComumAtendido(partida.getTimeA());
-                        interateMassium(partida.getTimeA(), r);
-                    } else if (s.equals(mission)) {
-                        interateMissionAtendida(partida.getTimeA());
-                        interateMassiumMission(partida.getTimeA(), r);
-                    } else if (s.equals(actionJob)) {
-                        interateAuctionJobAtendida(partida.getTimeA());
-                        interateMassiumAuction(partida.getTimeA(), r);
-                    }
-                } else if (linha.contains(jobCompleted + timeB)) {
-                    if (s.equals(job)) {
-                        interateJobComumAtendido(partida.getTimeB());
-                        interateMassium(partida.getTimeB(), r);
-                    } else if (s.equals(mission)) {
-                        interateMissionAtendida(partida.getTimeB());
-                        interateMassiumMission(partida.getTimeB(), r);
-                    } else if (s.equals(actionJob)) {
-                        interateAuctionJobAtendida(partida.getTimeB());
-                        interateMassiumAuction(partida.getTimeB(), r);
+        for (String nomeMap : conteudoDosLog.keySet()) {
+            List<Partida> partidas = new ArrayList<>();
+            Time objTimeA = null;
+            Time objTimeB = null;
+            Partida partida = null;
+            int i;
+            for (String linha : conteudoDosLog.get(nomeMap)) {
+                if (linha.contains(configuringSeed)) {
+                    i = Integer.parseInt(linha.split(": ", 0)[1]);
+                    objTimeA = new Time(timeA, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    objTimeB = new Time(timeB, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    partida = new Partida(i, 0, objTimeA, objTimeB);
+                    partidas.add(partida);
+                } else if (linha.contains(newId)) {
+                    String s = linha.split(newId, 0)[1];
+                    partida.setId(s);
+                } else if (linha.contains(newJob)) {
+                    i = partida.getQtdJobComum();
+                    partida.setQtdJobComum(i + 1);
+                } else if (linha.contains(newMission)) {
+                    i = partida.getQtdMission();
+                    partida.setQtdMission(i + 1);
+                } else if (linha.contains(newAuctionJob)) {
+                    i = partida.getQtdAuctionJob();
+                    partida.setQtdAuctionJob(i + 1);
+                } else if (linha.contains(jobCompleted)) {
+                    String s = linha.split("type\\(", 0)[1].split("\\)")[0];
+                    double r = Double.parseDouble(linha.split("reward\\(", 0)[1].split("\\)")[0]);
+                    if (linha.contains(jobCompleted + timeA)) {
+                        if (s.equals(job)) {
+                            interateJobComumAtendido(partida.getTimeA());
+                            interateMassium(partida.getTimeA(), r);
+                        } else if (s.equals(mission)) {
+                            interateMissionAtendida(partida.getTimeA());
+                            interateMassiumMission(partida.getTimeA(), r);
+                        } else if (s.equals(actionJob)) {
+                            interateAuctionJobAtendida(partida.getTimeA());
+                            interateMassiumAuction(partida.getTimeA(), r);
+                        }
+                    } else if (linha.contains(jobCompleted + timeB)) {
+                        if (s.equals(job)) {
+                            interateJobComumAtendido(partida.getTimeB());
+                            interateMassium(partida.getTimeB(), r);
+                        } else if (s.equals(mission)) {
+                            interateMissionAtendida(partida.getTimeB());
+                            interateMassiumMission(partida.getTimeB(), r);
+                        } else if (s.equals(actionJob)) {
+                            interateAuctionJobAtendida(partida.getTimeB());
+                            interateMassiumAuction(partida.getTimeB(), r);
+                        }
                     }
                 }
             }
-        }
 
-        for (Partida p : partidas) {
-            //comum
-            double qtdJob = p.getQtdJobComum();
-            double qtdMission = p.getQtdMission();
-            //A
-            calcularSomatorio(p.getTimeA());
-            calcularProporcaoJob(qtdJob, p.getTimeA());
-            calcularProporcaoMission(qtdMission, p.getTimeA());
+            for (Partida p : partidas) {
+                //comum
+                double qtdJob = p.getQtdJobComum();
+                double qtdMission = p.getQtdMission();
+                //A
+                calcularSomatorio(p.getTimeA());
+                calcularProporcaoJob(qtdJob, p.getTimeA());
+                calcularProporcaoMission(qtdMission, p.getTimeA());
 
-            //B
-            calcularSomatorio(p.getTimeB());
-            calcularProporcaoJob(qtdJob, p.getTimeB());
-            calcularProporcaoMission(qtdMission, p.getTimeB());
+                //B
+                calcularSomatorio(p.getTimeB());
+                calcularProporcaoJob(qtdJob, p.getTimeB());
+                calcularProporcaoMission(qtdMission, p.getTimeB());
+            }
+            try {
+                SaveInExcel.save(partidas, nomeMap);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
-        try {
-            SaveInExcel.save(partidas);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println(partidas.toString());
+//        System.out.println(partidas.toString());
+
     }
 
     private static void interateMassiumAuction(Time time, double r) {
