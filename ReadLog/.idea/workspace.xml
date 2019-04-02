@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7242567-43b7-4733-bb3c-c0a7950423de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Berlin-1.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Copenhagen-1.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paris-1.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paris.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/SaveInExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/SaveInExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/bin/mapc2018udesc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/bin/mapc2018udesc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/bin/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/bin/teste.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/src/agt/sample_agent.asl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../teste/teste.jcm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-03-12-14-33-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-03-12-14-33-47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-03-12-14-33-48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/berlin1 - Copia.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/berlin1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/berlin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/berlin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/cuiaba.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/saopaulo.xls" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="1615">
               <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
@@ -44,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+            <state relative-caret-position="257">
+              <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Partida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="408">
               <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="e#580#581#0" expanded="true" />
@@ -76,11 +64,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/ReadFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
+            <state relative-caret-position="204">
               <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#907#915#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,6 +183,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,16 +269,17 @@
       <workItem from="1553174131999" duration="961000" />
       <workItem from="1553192825323" duration="982000" />
       <workItem from="1554157745421" duration="3606000" />
+      <workItem from="1554207162303" duration="660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15243000" />
+    <option name="totallyTimeSpent" value="15903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,30 +323,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log">
+    <entry file="file://$PROJECT_DIR$/MASSim-log-2019-03-12-14-33-47.log" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48127">
-          <caret line="2831" column="40" selection-start-line="2831" selection-start-column="40" selection-end-line="2831" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="1615">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Partida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="408">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="e#580#581#0" expanded="true" />
@@ -376,26 +351,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/ReadFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
+        <state relative-caret-position="204">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#907#915#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/util/Teste.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="112" column="24" selection-start-line="112" selection-start-column="24" selection-end-line="112" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+        <state relative-caret-position="257">
+          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
