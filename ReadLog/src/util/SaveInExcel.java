@@ -56,26 +56,28 @@ public class SaveInExcel {
         }
         int rowNum = 1;
         for (Partida partida : partidas) {
-            Row row = sheet.createRow(rowNum++);
-            row.createCell(0).setCellValue(partida.getId());
-            row.createCell(1).setCellValue(partida.getSemente());
-            row.createCell(2).setCellValue(partida.getQtdJobComum());
-            row.createCell(3).setCellValue(partida.getQtdMission());
+            if (partida.getTimeA().getSomatorioMassium() != 0 && partida.getTimeB().getSomatorioMassium() != 0) {
+                Row row = sheet.createRow(rowNum++);
+                row.createCell(0).setCellValue(partida.getId());
+                row.createCell(1).setCellValue(partida.getSemente());
+                row.createCell(2).setCellValue(partida.getQtdJobComum());
+                row.createCell(3).setCellValue(partida.getQtdMission());
 //            row.createCell(4).setCellValue(partida.getQtdAuctionJob());
-            row.createCell(4).setCellValue(partida.getTimeA().getNome());
-            row.createCell(5).setCellValue(partida.getTimeA().getSomatorioMassium());
-            row.createCell(6).setCellValue(partida.getTimeA().getQtdJobComumAtendido());
-            row.createCell(7).setCellValue(partida.getTimeA().getQtdMissionAtendido());
+                row.createCell(4).setCellValue(partida.getTimeA().getNome());
+                row.createCell(5).setCellValue(partida.getTimeA().getSomatorioMassium());
+                row.createCell(6).setCellValue(partida.getTimeA().getQtdJobComumAtendido());
+                row.createCell(7).setCellValue(partida.getTimeA().getQtdMissionAtendido());
 //            row.createCell(9).setCellValue(partida.getTimeA().getQtdAuctionJobAtendido());
-            row.createCell(8).setCellValue(partida.getTimeA().getProporcaoJob());
-            row.createCell(9).setCellValue(partida.getTimeA().getProporcaoMission());
-            row.createCell(10).setCellValue(partida.getTimeB().getNome());
-            row.createCell(11).setCellValue(partida.getTimeB().getSomatorioMassium());
-            row.createCell(12).setCellValue(partida.getTimeB().getQtdJobComumAtendido());
-            row.createCell(13).setCellValue(partida.getTimeB().getQtdMissionAtendido());
+                row.createCell(8).setCellValue(partida.getTimeA().getProporcaoJob());
+                row.createCell(9).setCellValue(partida.getTimeA().getProporcaoMission());
+                row.createCell(10).setCellValue(partida.getTimeB().getNome());
+                row.createCell(11).setCellValue(partida.getTimeB().getSomatorioMassium());
+                row.createCell(12).setCellValue(partida.getTimeB().getQtdJobComumAtendido());
+                row.createCell(13).setCellValue(partida.getTimeB().getQtdMissionAtendido());
 //            row.createCell(16).setCellValue(partida.getTimeB().getQtdAuctionJobAtendido());
-            row.createCell(14).setCellValue(partida.getTimeB().getProporcaoJob());
-            row.createCell(15).setCellValue(partida.getTimeB().getProporcaoMission());
+                row.createCell(14).setCellValue(partida.getTimeB().getProporcaoJob());
+                row.createCell(15).setCellValue(partida.getTimeB().getProporcaoMission());
+            }
         }
 
         for (int i = 0; i < columns.length; i++) {
