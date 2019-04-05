@@ -16,7 +16,7 @@ pointsPolygonStorage([
 ]).
 lat(48.89999).
 lon(2.40999).
-itens([item(item1,_,_)]).
+itens([item(item3,_,_)]).
 
 !start.
 
@@ -32,23 +32,49 @@ itens([item(item1,_,_)]).
 whatStorageUseToGET(STORAGE,ITENS)
 	:-
 		pointsPolygonStorage(LIST) 
-		& percorreListaStorage(LIST,100000,STORAGE,ITENS,R)
+		& percorreListaStorage(LIST,100000,[],ESTOQUES,ITENS,R)
 	.
 
 
 //Storage distribuido==========================================================================
-percorreListaStorage([H|T],DISTANCIA,MELHORSTORAGE,ITENSDESEJADOS,R):-
+percorreListaStorage([H|T],DISTANCIA,ESTOQUESAUX,ESTOQUES,ITENSDESEJADOS,R):-
 										 desmontaItemListaStorage(H,NAMEATUAL,LATDESTINO,LONDESTINO) 
 										 & lat(LATATUAL) 
 										 & lon(LONATUAL)
 										 & getStorage(NAMEATUAL,ITENSDEPOSITADOS)
-										 & containsItens(ITENSDESEJADOS,ITENSDEPOSITADOS,R)
-										 & percorreListaStorage(T,MENORDISTANCIA,NOVOMELHORSTORAGE,ITENSDESEJADOS,R)
+										 & containsItens(ITENSDESEJADOS,ITENSDEPOSITADOS,ITEMENCONTRADO)
+										 & .print("\n ITENS DESEJADOS ",ITENSDESEJADOS,
+										 		  "\n NAMEATUAL ",NAMEATUAL,
+										 		  "\n ITENS DEPOSITADOS ",ITENSDEPOSITADOS,
+										 		  "\n RESPOSTA ",ITEMENCONTRADO,
+										 		  "\n\n"
+										 )							 
+										 & percorreListaStorage(T,MENORDISTANCIA,ESTOQUESAUX,ESTOQUES,ITENSDESEJADOS,R)
 								.
+								
+
+percorreListaStorage([],DISTANCIA,ESTOQUESAUX,ESTOQUES,ITEM,R):- R = ESTOQUES.		
 
 getStorage(NAME,RESPOSTA):- storage(NAME,_,_,_,_,ITENS) & RESPOSTA=ITENS.
-								
-percorreListaStorage([],DISTANCIA,MELHORSTORAGE,ITEM,R):- R=MELHORSTORAGE.									
+
+
+containsItens(A,B,RESPOSTA):- find(A, B,[], R) & ((R\==[] & RESPOSTA="1")| (R==[]&RESPOSTA="2")).
+
+
+find([H|T],X,LISTAUX,RESPOSTA):-
+	.member(H,X) 
+	& .concat([H],LISTAUX,RESPOSTA)
+	& find(T,X,RESPOSTA,RESPOSTA)
+.	
+	
+find([H|T],X,LISTAUX,RESPOSTA):-
+	 not .member(H,X) & find(T,X,RESPOSTA,RESPOSTA)
+.
+
+find([],X,LISTAUX,RESPOSTA):-
+	.print("L ",LISTAUX," Z ",RESPOSTA)&
+	RESPOSTA=LISTAUX 
+.
 
 validaPossuiItens([H|T],LISTSTORAGES):- storage(NAME,_,_,_,_,LIST) &
 											
@@ -57,9 +83,7 @@ validaPossuiItens([H|T],LISTSTORAGES):- storage(NAME,_,_,_,_,LIST) &
 											.concat([],[NOVOMELHORSTORAGE],LISTSTORAGES)&
 											validaPossuiItem(T,LISTSTORAGES)
 										.
-											
-containsItens(A,B,R):-.print("Desejado: ",A," Itens disponiveis: ",B).
-										
+
 validaPossuiItens([],LISTSTORAGES):-LISTSTORAGES.
 
 
