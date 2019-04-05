@@ -2,18 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7242567-43b7-4733-bb3c-c0a7950423de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CreateMatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../CreateMatch/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-01-22-23-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-00-24-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-02-25-48.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-02-25-48.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-04-27-08.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-04-27-08.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-06-28-27.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-06-28-27.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/MASSim-log-2019-04-02-08-29-46.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/berlin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/berlin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/copenhagen.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/copenhagen.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/paris.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/paris.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/saopaulo.xls" beforeDir="false" afterPath="$PROJECT_DIR$/results/saopaulo.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/SaveInExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/SaveInExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/getPartidas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/getPartidas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/BerlinExperimento9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/CopenhagenExperimento9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/ParisExperimento9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/SaoPauloExperimento9.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="64" column="73" lean-forward="true" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
+            <state relative-caret-position="178">
+              <caret line="58" column="113" lean-forward="true" selection-start-line="58" selection-start-column="113" selection-end-line="58" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -275,16 +310,15 @@
       <workItem from="1554157745421" duration="3606000" />
       <workItem from="1554207162303" duration="660000" />
       <workItem from="1554316985197" duration="684000" />
-      <workItem from="1554396209029" duration="1575000" />
+      <workItem from="1554396209029" duration="2694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18162000" />
+    <option name="totallyTimeSpent" value="19281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -295,7 +329,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34994584" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34994584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/SaveInExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="64" column="73" lean-forward="true" selection-start-line="64" selection-start-column="73" selection-end-line="64" selection-end-column="73" />
+        <state relative-caret-position="178">
+          <caret line="58" column="113" lean-forward="true" selection-start-line="58" selection-start-column="113" selection-end-line="58" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

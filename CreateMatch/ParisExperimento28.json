@@ -1,0 +1,8 @@
+{
+    "server": "$(server/server.json)",
+    "match": "$(match/ParisMatch28.json)",
+    "teams": {
+        "A": "$(teams/A.json)",
+        "B": "$(teams/B.json)"
+    }
+}

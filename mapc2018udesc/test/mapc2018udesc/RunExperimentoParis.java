@@ -20,7 +20,7 @@ public class RunExperimentoParis {
 					if (Desktop.isDesktopSupported()) {
 					    Desktop.getDesktop().browse(new URI("http://127.0.0.1:8000"));
 					}
-					Server.main(new String[] {"-conf", "conf/Experimento-Paris.json", "--monitor"});					
+					Server.main(new String[] {"-conf", "conf/ParisExperimento1.json", "--monitor"});					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -28,7 +28,7 @@ public class RunExperimentoParis {
 		}).start();
 
 		try {
-			JaCaMoLauncher.main(new String[] {"mapc2018teste.jcm"});
+			JaCaMoLauncher.main(new String[] {"mapc2018experimento.jcm"});
 		} catch (JasonException e) {
 			System.out.println("Exception: "+e.getMessage());
 			e.printStackTrace();

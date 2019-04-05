@@ -18,7 +18,7 @@ function main() {
     centerLons = [13.4, 12.5, -46.6, 2.3209];
     for (j = 0; j < 4; j++) {
         let data = [];
-        for (i = 1; i <= 50; i++) {
+        for (i = 51; i <= 141; i++) {
             let seed = parseInt(Math.random() * 10000);
             const obj = createObjectMatch(ids[j], maps[j], maxLats[j], maxLons[j], minLats[j], minLons[j],
                 centerLats[j], centerLons[j], i, seed);

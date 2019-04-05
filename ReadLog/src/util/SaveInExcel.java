@@ -56,7 +56,8 @@ public class SaveInExcel {
         }
         int rowNum = 1;
         for (Partida partida : partidas) {
-            if (partida.getTimeA().getSomatorioMassium() != 0 && partida.getTimeB().getSomatorioMassium() != 0) {
+            if (partida.getTimeA().getSomatorioMassium() == 0 && partida.getTimeB().getSomatorioMassium() == 0) {
+            } else {
                 Row row = sheet.createRow(rowNum++);
                 row.createCell(0).setCellValue(partida.getId());
                 row.createCell(1).setCellValue(partida.getSemente());
