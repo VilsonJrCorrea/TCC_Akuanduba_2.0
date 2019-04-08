@@ -1,5 +1,5 @@
 //storage(storage1, lat, lon, cap, used, [item(name1, stored1, delivered1)]).
-storage(storage0,48.8242,2.30026,10271,0,[item(item1,_,_)]).
+storage(storage0,48.8242,2.30026,10271,0,[item(item1,_,_),item(item3,_,_)]).
 storage(storage1,48.82745,2.3717,11049,0,[item(item1,_,_)]).
 storage(storage2,48.86243,2.30345,9401,0,[item(item1,_,_)]).
 storage(storage3,48.86627,2.40691,9797,0,[item(item1,_,_)]).
@@ -32,49 +32,48 @@ itens([item(item3,_,_)]).
 whatStorageUseToGET(STORAGE,ITENS)
 	:-
 		pointsPolygonStorage(LIST) 
-		& percorreListaStorage(LIST,100000,[],ESTOQUES,ITENS,R)
+		& percorreListaStorage(LIST,ITENS,ESTOQUES,R)
+		& .print(R, "  --------------  ",ESTOQUES," ------------")
 	.
 
 
 //Storage distribuido==========================================================================
-percorreListaStorage([H|T],DISTANCIA,ESTOQUESAUX,ESTOQUES,ITENSDESEJADOS,R):-
+percorreListaStorage([H|T], ITENSDESEJADOS, ESTOQUES,R):-
 										 desmontaItemListaStorage(H,NAMEATUAL,LATDESTINO,LONDESTINO) 
-										 & lat(LATATUAL) 
+										 & lat(LATATUAL)		
 										 & lon(LONATUAL)
 										 & getStorage(NAMEATUAL,ITENSDEPOSITADOS)
-										 & containsItens(ITENSDESEJADOS,ITENSDEPOSITADOS,ITEMENCONTRADO)
-										 & .print("\n ITENS DESEJADOS ",ITENSDESEJADOS,
-										 		  "\n NAMEATUAL ",NAMEATUAL,
-										 		  "\n ITENS DEPOSITADOS ",ITENSDEPOSITADOS,
-										 		  "\n RESPOSTA ",ITEMENCONTRADO,
-										 		  "\n\n"
-										 )							 
-										 & percorreListaStorage(T,MENORDISTANCIA,ESTOQUESAUX,ESTOQUES,ITENSDESEJADOS,R)
+										 & containsItens(ITENSDESEJADOS,ITENSDEPOSITADOS,[],ITEMENCONTRADO)
+										 & .length(ITEMENCONTRADO,QTDENCONTRADO)
+										 & percorreListaStorage(T,ITENSDESEJADOS,ESTOQUES,R)
+										 & temItem(QTDENCONTRADO,NAMEATUAL,RETORNO)
+										 & put(RETORNO,ESTOQUES,R)	
 								.
 								
+put(NAME,LIST,R):-.list(NAME) & inserirF(NAME,LIST,R).
+put(NAME,LIST,R):-.print("FAIL EM ",NAME," LIST ",LIST," R ",R).
 
-percorreListaStorage([],DISTANCIA,ESTOQUESAUX,ESTOQUES,ITEM,R):- R = ESTOQUES.		
+inserirF(E,[],[E]):-true.
+inserirF(E,[H|T],R):- inserirF(E,T,RA) & R=[H|RA].
 
+
+
+
+
+
+temItem(QTDENCONTRADO, NAMEATUAL, RETORNO):- QTDENCONTRADO==1 & RETORNO=[NAMEATUAL].
+temItem(QTDENCONTRADO, NAMEATUAL,RETORNO):-true.						
+								
+percorreListaStorage([],ITENS,ESTOQUES,R):-  true.	
 getStorage(NAME,RESPOSTA):- storage(NAME,_,_,_,_,ITENS) & RESPOSTA=ITENS.
 
 
-containsItens(A,B,RESPOSTA):- find(A, B,[], R) & ((R\==[] & RESPOSTA="1")| (R==[]&RESPOSTA="2")).
+containsItens([H|T],ITENSDEPOSITADOS,P,R):- ((.member(H,ITENSDEPOSITADOS) & .concat([H],P,R))
+											| (not .member(H,ITENSDEPOSITADOS) &.concat([],P,R)))
+											& containsItens(T,ITENSDEPOSITADOS,R,R)
+					.
+containsItens([],ITENSDEPOSITADOS,_,R):-true.
 
-
-find([H|T],X,LISTAUX,RESPOSTA):-
-	.member(H,X) 
-	& .concat([H],LISTAUX,RESPOSTA)
-	& find(T,X,RESPOSTA,RESPOSTA)
-.	
-	
-find([H|T],X,LISTAUX,RESPOSTA):-
-	 not .member(H,X) & find(T,X,RESPOSTA,RESPOSTA)
-.
-
-find([],X,LISTAUX,RESPOSTA):-
-	.print("L ",LISTAUX," Z ",RESPOSTA)&
-	RESPOSTA=LISTAUX 
-.
 
 validaPossuiItens([H|T],LISTSTORAGES):- storage(NAME,_,_,_,_,LIST) &
 											
