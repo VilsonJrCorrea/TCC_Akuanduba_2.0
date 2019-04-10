@@ -23,23 +23,29 @@ itensXPTO([item(item2,_,_),item(item2,_,_),item(item2,_,_)]).
 
 +!start : true 
 	<-	
-//		?job(_,_,_,_,_,LISTITENS);
-//		!stepsToGET(LISTITENS,STEPS1);
+		?job(_,_,_,_,_,LISTITENS);
+		!stepsToGET(LISTITENS,STEPS1);
 //		.print(STEPS1);
 		
 		?itensXPTO(LIST);		
 		!stepsToPOST(LIST,STEPS2);
-		.print(STEPS2);
+//		.print(STEPS2);
 	.
 
 +!stepsToGET(LISTITENS,STEPS):true
 	<-
-		?buildStepsToGET( LISTITENS, [], STEPS);
+		?buildStepsToGET( LISTITENS, [], R);
+		.print("Antes ",R)
+		?limpaLista(R,vazio,[],STEPS);
+		.print("Depois ",STEPS)
 .
 
 +!stepsToPOST(LIST,STEPS):true
 	<-
-		?buildStepsToPOST( LIST, [], STEPS);
+		?buildStepsToPOST( LIST, [], R);
+		.print("Antes ",R)
+		?limpaLista(R,vazio,[],STEPS);
+		.print("Depois ",STEPS)
 .
 
 buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
@@ -61,6 +67,24 @@ buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
 		& .concat(NNLISTA, RR, N_LISTA) 
 		& buildStepsToPOST( T, N_LISTA, RETORNO)
 	.
+
+//IGNORA REPETIDO
+limpaLista([OP|T],GT,TMP,R) :- not (goto(_)=OP) 
+							   & .concat(TMP,[OP],TMP2) 
+							   & limpaLista(T,GT,TMP2,R).
+
+//ADICIONA UM GOTO DIFERENTE
+limpaLista([GT1|T],GT,TMP,R) :- GT\==GT1
+								& .concat(TMP,[GT1],TMP2)
+							    & limpaLista(T,GT1,TMP2,R).
+
+//IGNORA GOTO REPETIDO
+limpaLista([GT1|T],GT,TMP,R) :- GT==GT1 
+								& limpaLista(T,GT,TMP,R).
+
+//CONDICAO DE PARADA
+limpaLista([],GT,TMP,TMP):-true.
+
 
 repeat(TERM , QTD , L ,RR ) :- QTD> 0 & repeat(TERM , QTD-1 , [TERM|L] , RR). 						
 repeat(TERM , QTD , L ,L ):-true.
