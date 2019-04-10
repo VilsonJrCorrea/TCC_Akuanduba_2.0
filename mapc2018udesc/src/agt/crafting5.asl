@@ -106,7 +106,8 @@ highlevel(ITEM,LEVEL):- item(ITEM,_,_,_)&
 +!craftComParts:	
 		role(ROLE,_,_,LOAD,_,_,_,_,_,_,_)  										&
 		name(NAMEAGENT) 														&
-		whatStorageUse(STORAGE) 													&	
+//		whatStorageUse(STORAGE) 												&
+//		stepsToGET()															&	
 		centerWorkshop(WORKSHOP) 												&
 		craftCommitment(NAMEAGENT,ITEM) 										
 	<-				
@@ -114,14 +115,13 @@ highlevel(ITEM,LEVEL):- item(ITEM,_,_,_)&
 		!dropAll;
 		?item(ITEM,_,roles(LROLES),parts(LPARTS));			
 		.difference(LROLES,[ROLE],OTHERROLES);
-		?retrieveitensrule(LPARTS, [], RETRIEVELIST);				
-		.concat( [goto(STORAGE)], RETRIEVELIST, 
-				 [goto(WORKSHOP), help(OTHERROLES), 
-				  assemble(ITEM), goto(STORAGE),
-	   			  store(ITEM,1) ],
-				PLAN);
-
-		!addtask(craftComParts,8,PLAN,[]);
+//		?retrieveitensrule(LPARTS, [], RETRIEVELIST);
+		?stepsToGET(LPARTS,STEPS);
+		?stepsToPOST([ITEM],S);
+		.print("------------------------------->>>>> ",LPARTS,"--",RETRIVELIST)				
+		.concat( STEPS, [goto(WORKSHOP), help(OTHERROLES), assemble(ITEM)],	PLAN);
+		.concat(PLAN,S,NLIST)
+		!addtask(craftComParts,8,NLIST,[]);
 	.
 
 +!supportCraft(OTHERROLES):
