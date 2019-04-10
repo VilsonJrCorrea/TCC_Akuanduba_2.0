@@ -1,12 +1,12 @@
 //storage(storage1, lat, lon, cap, used, [item(name1, stored1, delivered1)]).
-storage(storage0,48.8242,2.30026,10271,0,[item(item3,_,_),item(item1,_,_),item(item2,_,_)]).
+storage(storage0,48.8242,2.30026,10271,0,[item(item3,_,_),item(item1,_,_),item(item2,_,_),item(item11,_,_)]).
 storage(storage1,48.82745,2.3717,11049,0,[item(item1,_,_),item(item3,_,_)]).
 storage(storage2,48.86243,2.30345,9401,0,[item(item1,_,_),item(item3,_,_),item(item2,_,_)]).
 storage(storage3,48.86627,2.40691,9797,0,[item(item1,_,_),item(item3,_,_)]).
 storage(storage4,48.86627,2.40691,9797,0,[item(item1,_,_),item(item3,_,_)]).
 storage(storage5,48.86627,2.40691,9797,0,[item(item1,_,_),item(item3,_,_),item(item2,_,_)]).
 storage(storage6,48.86627,2.40691,9797,0,[item(item1,_,_),item(item3,_,_)]).
-storage(storage7,48.86627,2.40691,9797,0,[item(item1,_,_),item(item2,_,_)]).
+storage(storage7,48.86627,2.40691,9797,0,[item(item1,_,_),item(item2,_,_),item(item10,_,_)]).
 
 pointsPolygonStorage([
 	storage(storage5,48.86627,2.40691,2.835612185667537),
@@ -17,20 +17,53 @@ pointsPolygonStorage([
 lat(48.89999).
 lon(2.40999).
 item(item2,_,_).
-
+job(job0,storage5,384,1,67,[required(item10,1),required(item11,2),required(item5,1),required(item7,1),required(item9,1)]).
+itensXPTO([item(item2,_,_),item(item2,_,_),item(item2,_,_)]).
 !start.
-
 
 +!start : true 
 	<-	
-		?item(NAMEITEM,_,_);
-		?whatStorageUseToGET(NAMEITEM,R1);
-		.print("RESPOSTA GET ",R1);
+//		?job(_,_,_,_,_,LISTITENS);
+//		!stepsToGET(LISTITENS,STEPS1);
+//		.print(STEPS1);
 		
-		?whatStorageUseToPOST(NAMEITEM,R2);
-		.print("RESPOSTA POST ",R2);
+		?itensXPTO(LIST);		
+		!stepsToPOST(LIST,STEPS2);
+		.print(STEPS2);
 	.
 
++!stepsToGET(LISTITENS,STEPS):true
+	<-
+		?buildStepsToGET( LISTITENS, [], STEPS);
+.
+
++!stepsToPOST(LIST,STEPS):true
+	<-
+		?buildStepsToPOST( LIST, [], STEPS);
+.
+
+buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
+
+buildStepsToGET( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
+		 repeat( retrieve(ITEM,1) , QTD , [] ,RR )
+		& whatStorageUseToGET(ITEM,R1)
+		& .concat(LISTA,[goto(R1)],NNLISTA)
+		& .concat(NNLISTA, RR, N_LISTA) 
+		& buildStepsToGET( T, N_LISTA, RETORNO)
+	.
+
+buildStepsToPOST( [], LISTA, RETORNO ) :- RETORNO = LISTA.
+
+buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
+		 repeat( store(ITEM,1) , 1 , [] ,RR )
+		& whatStorageUseToPOST(ITEM,R1)
+		& .concat(LISTA,[goto(R1)],NNLISTA)
+		& .concat(NNLISTA, RR, N_LISTA) 
+		& buildStepsToPOST( T, N_LISTA, RETORNO)
+	.
+
+repeat(TERM , QTD , L ,RR ) :- QTD> 0 & repeat(TERM , QTD-1 , [TERM|L] , RR). 						
+repeat(TERM , QTD , L ,L ):-true.
 
 whatStorageUseToPOST(NAMEITEM, RESPOSTA)
 	:-	
@@ -122,13 +155,13 @@ calculatedistance( XA, YA, XB, YB, DISTANCIA )
 
 validaResposta(LIST, RESPOSTA,RESPOSTA):-
 	.atom(RESPOSTA)
-	&.print("É atom. O estoque mais proximo é o ",RESPOSTA)
+	//&.print("É atom. O estoque mais proximo é o ",RESPOSTA)
 .
 
 validaResposta(LIST, RESPOSTA,R):-
 	not .atom(RESPOSTA)
 	& retornaOMaisProximo(LIST,100000,RESPOSTA,R)
-	& .print("Não é atom. Indo para o mais proximo ",R)
+	//& .print("Não é atom. Indo para o mais proximo ",R)
 .
 
 validaMenorDistancia(X,Y,P):-X>Y& P=Y.
