@@ -62,7 +62,7 @@ highlevel(ITEM,LEVEL):- item(ITEM,_,_,_)&
 						not (lastMotorcycle(NAMEAGENT)|lastCar(NAMEAGENT)) &
 						numberTotalCraft(NTC)				&
 						.count(craftCommitment(_,_))<=NTC	&
-						whatStorageUse(STORAGE) 				&	
+//						whatStorageUse(STORAGE) 				&	
 						centerWorkshop(WORKSHOP) 			&
 						not craftCommitment(NAMEAGENT,_) 	&
 						not gatherCommitment(NAMEAGENT,_)
