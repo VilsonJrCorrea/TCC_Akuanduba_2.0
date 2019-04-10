@@ -366,55 +366,137 @@ amilastfreetruck(ME)
 
 	
 //Storage distribuido==========================================================================
-whatStorageUse(R):-
-	pointsPolygonStorage(LIST) &
-	percorreListaStorage(LIST,100000,STORAGE,R) 
-.					
++!stepsToGET(LISTITENS,STEPS):true
+	<-
+		?buildStepsToGET( LISTITENS, [], STEPS);
+.
 
-percorreListaStorage([H|T],DISTANCIA,MELHORSTORAGE,R):-
++!stepsToPOST(LIST,STEPS):true
+	<-
+		?buildStepsToPOST( LIST, [], STEPS);
+.
+
+buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
+
+buildStepsToGET( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
+		 repeat( retrieve(ITEM,1) , QTD , [] ,RR )
+		& whatStorageUseToGET(ITEM,R1)
+		& .concat(LISTA,[goto(R1)],NNLISTA)
+		& .concat(NNLISTA, RR, N_LISTA) 
+		& buildStepsToGET( T, N_LISTA, RETORNO)
+	.
+
+buildStepsToPOST( [], LISTA, RETORNO ) :- RETORNO = LISTA.
+
+buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
+		 repeat( store(ITEM,1) , 1 , [] ,RR )
+		& whatStorageUseToPOST(ITEM,R1)
+		& .concat(LISTA,[goto(R1)],NNLISTA)
+		& .concat(NNLISTA, RR, N_LISTA) 
+		& buildStepsToPOST( T, N_LISTA, RETORNO)
+	.
+
+repeat(TERM , QTD , L ,RR ) :- QTD> 0 & repeat(TERM , QTD-1 , [TERM|L] , RR). 						
+repeat(TERM , QTD , L ,L ):-true.
+
+whatStorageUseToPOST(NAMEITEM, RESPOSTA)
+	:-	
+		pointsPolygonStorage(LIST) 
+		& percorreListaStorageToPOST(LIST,NAMEITEM,ESTOQUES,10000,STORAGE,ESTOQ)
+		& validaResposta(LIST,ESTOQ,RESPOSTA)
+	.
+
+whatStorageUseToGET(NAMEITEM, RESPOSTA)
+	:-	
+		pointsPolygonStorage(LIST) 
+		& percorreListaStorageToGET(LIST,NAMEITEM,ESTOQUES,10000,STORAGE,ESTOQ)
+		& validaResposta(LIST,ESTOQ,RESPOSTA)
+	.
+
+percorreListaStorageToGET([H|T], NAMEITEM, ESTOQUES,DISTANCIA,NOMEMELHORSTORAGE,R):-
+										 desmontaItemListaStorage(H,NAMEATUAL,LATDESTINO,LONDESTINO) 
+										 & lat(LATATUAL)		
+										 & lon(LONATUAL)
+										 & getStorage(NAMEATUAL,ITENSDEPOSITADOS)
+										 & containsItens(NAMEITEM,ITENSDEPOSITADOS,0,RESULTADO)
+										 & 	((RESULTADO>0 
+										 	 & calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) 
+										 	 & validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)
+										 	 & validaName(DISTANCIACALCULADA,DISTANCIA,NOMEMELHORSTORAGE,NAMEATUAL,NOVOMELHORSTORAGE)
+										 	 & percorreListaStorageToGET(T,NAMEITEM,ESTOQUES,MENORDISTANCIA,NOVOMELHORSTORAGE,R)
+										 	 )
+										 									|
+										  (RESULTADO==0 
+										  	& percorreListaStorageToGET(T,NAMEITEM,ESTOQUES,DISTANCIA,NOMEMELHORSTORAGE,R)
+										  ))
+								.
+					
+percorreListaStorageToGET([],ITENS,ESTOQUES,DISTANCIA,MELHORSTORAGE, R):-  R=MELHORSTORAGE.	
+			
+			
+percorreListaStorageToPOST([H|T], NAMEITEM, ESTOQUES,DISTANCIA,NOMEMELHORSTORAGE,R):-
+										 desmontaItemListaStorage(H,NAMEATUAL,LATDESTINO,LONDESTINO) 
+										 & lat(LATATUAL)		
+										 & lon(LONATUAL)
+										 & getStorage(NAMEATUAL,ITENSDEPOSITADOS)
+										 & containsItens(NAMEITEM,ITENSDEPOSITADOS,0,RESULTADO)
+										 & 	((RESULTADO==0 
+										 	 & calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) 
+										 	 & validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)
+										 	 & validaName(DISTANCIACALCULADA,DISTANCIA,NOMEMELHORSTORAGE,NAMEATUAL,NOVOMELHORSTORAGE)
+										 	 & percorreListaStorageToPOST(T,NAMEITEM,ESTOQUES,MENORDISTANCIA,NOVOMELHORSTORAGE,R)
+										 	 )
+										 									|
+										  (RESULTADO\==0 
+										  	& percorreListaStorageToPOST(T,NAMEITEM,ESTOQUES,DISTANCIA,NOMEMELHORSTORAGE,R)
+										  ))
+								.
+					
+percorreListaStorageToPOST([],ITENS,ESTOQUES,DISTANCIA,MELHORSTORAGE, R):-  R=MELHORSTORAGE.	
+			
+retornaOMaisProximo([H|T],DISTANCIA,MELHORSTORAGE,R):-
 										 desmontaItemListaStorage(H,NAMEATUAL,LATDESTINO,LONDESTINO) &
 										 lat(LATATUAL) &
 										 lon(LONATUAL) &
 										 calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) &
 										 validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)&
 										 validaName(DISTANCIACALCULADA,DISTANCIA,MELHORSTORAGE,NAMEATUAL,NOVOMELHORSTORAGE)&
-										 percorreListaStorage(T,MENORDISTANCIA,NOVOMELHORSTORAGE,R)
+										 retornaOMaisProximo(T,MENORDISTANCIA,NOVOMELHORSTORAGE,R)
 								.
-percorreListaStorage([],DISTANCIA,MELHORSTORAGE,R):- R=MELHORSTORAGE.									
+								
+retornaOMaisProximo([],DISTANCIA,MELHORSTORAGE,R):- R=MELHORSTORAGE.	
+								
+getStorage(NAME,RESPOSTA):- storage(NAME,_,_,_,_,ITENS) & RESPOSTA=ITENS.
+
+containsItens(NAMEITEM,[H|T],CONT,R):- getNameItem(H,NAME) &
+									((NAME==NAMEITEM &AUX=CONT+1 & containsItens(NAMEITEM,T,AUX,R))	| 
+									 (NAME\==NAMEITEM & containsItens(NAMEITEM,T,CONT,R)))
+									
+					.
+containsItens(NAMEITEM,[],CONT,R):-R=CONT.
+
+getNameItem(item(NAME,_,_),NAME):-true.
 
 desmontaItemListaStorage(storage(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
 					NNAME=NAME &
 					LLAT=LAT &
 					LLON=LON
 		.
+		
+calculatedistance( XA, YA, XB, YB, DISTANCIA )
+					:- DISTANCIA =  math.sqrt((XA-XB)*(XA-XB)+(YA-YB)*(YA-YB)).
+	
 
+validaResposta(LIST, RESPOSTA,RESPOSTA):-
+	.atom(RESPOSTA)
+	//&.print("É atom. O estoque mais proximo é o ",RESPOSTA)
+.
 
-//Workshop distribuido==========================================================================
-//whatWorkshopUse(R):-
-//	pointsPolygonWorkshop(LIST) &
-//	percorreListaWorkshop(LIST,100000,WORKSHOP,R) 
-//.					
-//
-//percorreListaWorkshop([H|T],DISTANCIA,MELHORWORKSHOP,R):-
-//										 desmontaItemListaWorkshop(H,NAMEATUAL,LATDESTINO,LONDESTINO) &
-//										 lat(LATATUAL) &
-//										 lon(LONATUAL) &
-//										 calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) &
-//										 validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)&
-//										 validaName(DISTANCIACALCULADA,DISTANCIA,MELHORWORKSHOP,NAMEATUAL,NOVOMELHORWORKSHOP)&
-//										 percorreListaWorkshop(T,MENORDISTANCIA,NOVOMELHORWORKSHOP,R)
-//								.
-//								
-//percorreListaWorkshop([],DISTANCIA,MELHORWORKSHOP,R):- R=MELHORWORKSHOP.	
-//											
-//desmontaItemListaWorkshop(workshop(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
-//					NNAME=NAME &
-//					LLAT=LAT &
-//					LLON=LON
-//		.
-
-//==================================================================================================
-
+validaResposta(LIST, RESPOSTA,R):-
+	not .atom(RESPOSTA)
+	& retornaOMaisProximo(LIST,100000,RESPOSTA,R)
+	//& .print("Não é atom. Indo para o mais proximo ",R)
+.
 
 validaMenorDistancia(X,Y,P):-X>Y& P=Y.
 validaMenorDistancia(X,Y,P):-X<=Y&P=X.

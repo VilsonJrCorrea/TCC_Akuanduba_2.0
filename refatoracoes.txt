@@ -1,0 +1,21 @@
+REFATORAÇÔES
+19 matches
+
+CLASSE: crafting5 
+ARRUMAR | LINHA: 109 | 118 
+ANALISAR| Linha 65
+
+CLASSE: DropAll
+ARRUMAR | LINHA: 4   | 7
+
+CLASSE: Fastgathering
+ARRUMAR | LINHA: 11   | 12 | 29
+
+CLASSE: gathering
+ARRUMAR | LINHA: 35
+
+CLASSE: job
+ARRUMAR | LINHA: 19	|20	| 47	|49	|54
+
+CLASSE: mission
+ARRUMAR | LINHA: 19	|41	| 44
