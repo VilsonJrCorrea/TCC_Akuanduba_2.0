@@ -393,7 +393,7 @@ buildStepsToGET( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 buildStepsToPOST( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
 buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
-		 repeat( store(ITEM,1) , 1 , [] ,RR )
+		 repeat( store(ITEM,1) , 1 , [] ,RR )//POSSO TROCAR POR BUILD STORE?!
 		& whatStorageUseToPOST(ITEM,R1)
 		& .concat(LISTA,[goto(R1)],NNLISTA)
 		& .concat(NNLISTA, RR, N_LISTA) 

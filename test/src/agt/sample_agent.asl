@@ -68,6 +68,9 @@ buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
 		& buildStepsToPOST( T, N_LISTA, RETORNO)
 	.
 
+
+
+
 //IGNORA REPETIDO
 limpaLista([OP|T],GT,TMP,R) :- not (goto(_)=OP) 
 							   & .concat(TMP,[OP],TMP2) 

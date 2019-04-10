@@ -2,8 +2,8 @@ REFATORAÇÔES
 19 matches
 
 CLASSE: crafting5 
-ARRUMAR | LINHA: 109 | 118 
-ANALISAR| Linha 65
+ARRUMAR | LINHA: 109 - OK | 118 - OK 
+ANALISAR| Linha 65 ok comentado
 
 CLASSE: DropAll
 ARRUMAR | LINHA: 4   | 7
