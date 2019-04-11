@@ -16,7 +16,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 	&	not missionCommitment( NAME, _ )
 	&	step(STEPATUAL) & STEPATUAL>5 
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
-	&	whatStorageUse(STORAGE)
+//	&	whatStorageUse(STORAGE)
 	&	sumvolruleJOB( ITENS, VOLUMETOTAL )
 	&	CAPACIDADE >= VOLUMETOTAL
 	&	possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
@@ -38,13 +38,14 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 //@realizarMissionSimples[atomic]
 +!realizarMission( NOMEMISSION )
 	:
-		whatStorageUse(STORAGE)
-	&	mission(NOMEMISSION,LOCALENTREGA,RECOMPENSA,STEPINICIAL,STEPFINAL,DESCONHECIDO1,DESCONHECIDO2,_,ITENSMISSION)
+//		whatStorageUse(STORAGE)
+		mission(NOMEMISSION,LOCALENTREGA,RECOMPENSA,STEPINICIAL,STEPFINAL,DESCONHECIDO1,DESCONHECIDO2,_,ITENSMISSION)
 	<-	
-		PASSOS_1 = [ goto( STORAGE ) ];
-		?passosRetrieve( ITENSMISSION, [], RETORNO );
-		.concat( PASSOS_1, RETORNO, PASSOS_2);
-		.concat( PASSOS_2, [ goto( LOCALENTREGA ), deliver_job( NOMEMISSION )], PASSOS_3);
+//		PASSOS_1 = [ goto( STORAGE ) ];
+//		?passosRetrieve( ITENSMISSION, [], RETORNO );
+//		.concat( PASSOS_1, RETORNO, PASSOS_2);
+		?stepsToGET(ITENSMISSION,STEPS);
+		.concat( STEPS, [ goto( LOCALENTREGA ), deliver_job( NOMEMISSION )], PASSOS_3);
 		
 		!addtask(mission,9,PASSOS_3,[]);
 	.
