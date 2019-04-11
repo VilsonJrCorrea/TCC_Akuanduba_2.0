@@ -115,13 +115,15 @@ highlevel(ITEM,LEVEL):- item(ITEM,_,_,_)&
 		!dropAll;
 		?item(ITEM,_,roles(LROLES),parts(LPARTS));			
 		.difference(LROLES,[ROLE],OTHERROLES);
-//		?retrieveitensrule(LPARTS, [], RETRIEVELIST);
-		?requiredRule(LPARTS,[],LISTITENS);
-		.print("||||||||| ",LISTITENS);
+		.print("Antes GET ",LPARTS);
+		.print("Antes POST ",[ITEM]);
+		?formatToGET(LPARTS,[],LISTITENS);
+		?formatToPOST([ITEM],[],ITENSPOST);
+		.print("Depois GET ",LISTITENS);
+		.print("Depois POST ",ITENSPOST);
 		?stepsToGET(LISTITENS,STEPS);
-		?itemRule([ITEM],[],ITENSPOST);
-		.print("------ ",ITENSPOST);
 		?stepsToPOST(ITENSPOST,S);
+		
 		.print("------------------------------->>>>> ",LPARTS,"--",RETRIVELIST);				
 		.concat( STEPS, [goto(WORKSHOP), help(OTHERROLES), assemble(ITEM)],	PLAN);
 		.concat(PLAN,S,NLIST);

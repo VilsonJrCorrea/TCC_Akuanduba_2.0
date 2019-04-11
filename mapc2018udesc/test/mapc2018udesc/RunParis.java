@@ -20,7 +20,7 @@ public class RunParis {
 					if (Desktop.isDesktopSupported()) {
 					    Desktop.getDesktop().browse(new URI("http://127.0.0.1:8000"));
 					}
-					Server.main(new String[] {"-conf", "conf/Test-Paris.json", "--monitor"});					
+					Server.main(new String[] {"-conf", "conf/ParisExperimento11.json", "--monitor"});					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

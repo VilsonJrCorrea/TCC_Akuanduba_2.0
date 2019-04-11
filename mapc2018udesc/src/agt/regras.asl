@@ -531,14 +531,14 @@ chooseARandomStorage(STORAGE):-
 		& .nth(I,LIST,STORAGE)
 .
 
-requiredRule([], RETRIEVE, RETRIEVELIST) :- 
+formatToGET([], RETRIEVE, RETRIEVELIST) :- 
     RETRIEVELIST = RETRIEVE.
  
-requiredRule([H|T], RETRIEVE, RETRIEVELIST) :-
-	 requiredRule(T, [required( H, 1)|RETRIEVE], RETRIEVELIST).
+formatToGET([H|T], RETRIEVE, RETRIEVELIST) :-
+	 formatToGET(T, [required( H, 1, _)|RETRIEVE], RETRIEVELIST).
 	 
-itemRule([], RETRIEVE, RETRIEVELIST) :- 
+formatToPOST([], RETRIEVE, RETRIEVELIST) :- 
     RETRIEVELIST = RETRIEVE.
  
-itemRule([H|T], RETRIEVE, RETRIEVELIST) :-
-	 itemRule(T, [item( H, 1)|RETRIEVE], RETRIEVELIST).
+formatToPOST([H|T], RETRIEVE, RETRIEVELIST) :-
+	 formatToPOST(T, [item( H, 1)|RETRIEVE], RETRIEVELIST).
