@@ -16,9 +16,10 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	&   not amilastfreetruck(_) //teste
 //	&	step(STEPATUAL) & STEPATUAL>119
 	&	step(STEPATUAL)
-	&	whatStorageUse(STORAGE)
-	&	storage(STORAGE,_,_,_,_,ITENSSTORAGE)
-	&	procurarTodosItens( ITENSJOB, ITENSSTORAGE )
+//	&	whatStorageUse(STORAGE)
+//	&	storage(STORAGE,_,_,_,_,ITENSSTORAGE)
+//	&	procurarTodosItens( ITENSJOB, ITENSSTORAGE )
+    &   stepsToGET(ITENSJOB,STEPS)
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
 	
 	&	sumvolruleJOB( ITENSJOB, VOLUMETOTAL )
@@ -44,14 +45,16 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	:
 		true
 	<-	
-		?whatStorageUse(STORAGE);
+//		?whatStorageUse(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
-		PASSOS_1 = [ goto( STORAGE ) ];
-		?passosRetrieve( ITENS, [], RETORNO );
-		.concat( PASSOS_1, RETORNO, PASSOS_2);
+		?stepsToGET(ITENS,STEPS);
+		
+//		PASSOS_1 = [ goto( STORAGE ) ];
+//		?passosRetrieve( ITENS, [], RETORNO );
+//		.concat( PASSOS_1, RETORNO, PASSOS_2);
 		//?buildStore( [], DEVOLVERITEMS);
 		//DEVOLVERITEMS
-		.concat( [goto(STORAGE)], PASSOS_2, [ goto( LOCALENTREGA ), deliver_job( NOMEJOB )], PASSOS_3);
+		.concat( STEPS, [ goto( LOCALENTREGA ), deliver_job( NOMEJOB )], PASSOS_3);
 		!removetask(fastgathering,_,_,_);
 		!addtask(job,5,PASSOS_3,[]);
 	.
