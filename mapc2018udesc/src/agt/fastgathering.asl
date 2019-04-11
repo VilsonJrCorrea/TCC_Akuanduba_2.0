@@ -9,7 +9,7 @@
 	<-
 		.wait(pointsPolygonStorage( _ ));
 //		?whatStorageUse(STORAGECENTRAL);
-		?chooseARandomStorage(STORAGE)
+		?chooseARandomStorage(STORAGE);
 		.wait(storage( STORAGE, _, _, _, _, LISTA));
 		?role( _,_,_,CAPACIDADE,_,_,_,_,_,_,_) ;
 		?lessqtt( LISTA, ITEM );

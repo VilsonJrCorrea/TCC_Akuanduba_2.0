@@ -30,10 +30,11 @@
 		QTD = math.floor( (LOAD / TAM) ) ;		
 		?repeat( gather, QTD-2, [], GATHERS );
 		
-//		.wait(centerStorage(FS));
 		.wait(pointsPolygonStorage( _ ));
-		?whatStorageUse(FS);
-		.concat([goto(LATRESOUR, LONRESOUR)],GATHERS,[goto(FS),store(ITEM,QTD)],PLAN);
+		?repeat(item(ITEM,1),QTD-2,[],LISTITENS);
+		?stepsToPOST(LISTITENS,STEPSDELIVERY);
+		
+		.concat([goto(LATRESOUR, LONRESOUR)],GATHERS,STEPSDELIVERY,PLAN);
 //		+steps( craftSemParts, PLAN);
 //		-expectedplan( craftSemParts, _);
 //		+expectedplan( craftSemParts, PLAN);
