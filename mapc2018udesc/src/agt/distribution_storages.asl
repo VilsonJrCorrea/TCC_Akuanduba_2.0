@@ -30,10 +30,10 @@
 .
 +!stepsToGET(LISTITENS,STEPS):true
 	<-
-		?buildStepsToGET( LISTITENS, [], R);
+		?buildStepsToGET( LISTITENS, [], STEPS);
 .
 
 +!stepsToPOST(LIST,STEPS):true
 	<-
-		?buildStepsToPOST( LIST, [], R);
+		?buildStepsToPOST( LIST, [], STEPS);
 .

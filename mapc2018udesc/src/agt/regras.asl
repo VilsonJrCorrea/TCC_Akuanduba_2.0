@@ -527,6 +527,18 @@ chooseARandomStorage(STORAGE):-
 		pointsPolygonStorage(LIST)
 		& .length(LIST,X)
 		& P= math.random(X)
-		& I=.math.floow(P)
+		& I= math.floor(P)
 		& .nth(I,LIST,STORAGE)
 .
+
+requiredRule([], RETRIEVE, RETRIEVELIST) :- 
+    RETRIEVELIST = RETRIEVE.
+ 
+requiredRule([H|T], RETRIEVE, RETRIEVELIST) :-
+	 requiredRule(T, [required( H, 1)|RETRIEVE], RETRIEVELIST).
+	 
+itemRule([], RETRIEVE, RETRIEVELIST) :- 
+    RETRIEVELIST = RETRIEVE.
+ 
+itemRule([H|T], RETRIEVE, RETRIEVELIST) :-
+	 itemRule(T, [item( H, 1)|RETRIEVE], RETRIEVELIST).

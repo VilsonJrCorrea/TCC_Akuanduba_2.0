@@ -116,11 +116,15 @@ highlevel(ITEM,LEVEL):- item(ITEM,_,_,_)&
 		?item(ITEM,_,roles(LROLES),parts(LPARTS));			
 		.difference(LROLES,[ROLE],OTHERROLES);
 //		?retrieveitensrule(LPARTS, [], RETRIEVELIST);
-		?stepsToGET(LPARTS,STEPS);
-		?stepsToPOST([ITEM],S);
-		.print("------------------------------->>>>> ",LPARTS,"--",RETRIVELIST)				
+		?requiredRule(LPARTS,[],LISTITENS);
+		.print("||||||||| ",LISTITENS);
+		?stepsToGET(LISTITENS,STEPS);
+		?itemRule([ITEM],[],ITENSPOST);
+		.print("------ ",ITENSPOST);
+		?stepsToPOST(ITENSPOST,S);
+		.print("------------------------------->>>>> ",LPARTS,"--",RETRIVELIST);				
 		.concat( STEPS, [goto(WORKSHOP), help(OTHERROLES), assemble(ITEM)],	PLAN);
-		.concat(PLAN,S,NLIST)
+		.concat(PLAN,S,NLIST);
 		!addtask(craftComParts,8,NLIST,[]);
 	.
 
