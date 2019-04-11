@@ -8,13 +8,10 @@
 	&	not (lastMotorcycle(NAME)|lastCar(NAME))
 	<-
 		.wait(pointsPolygonStorage( _ ));
-		?whatStorageUse(STORAGECENTRAL);
-		.wait(storage( STORAGECENTRAL, _, _, _, _, LISTA));
+//		?whatStorageUse(STORAGECENTRAL);
+		?chooseARandomStorage(STORAGE)
+		.wait(storage( STORAGE, _, _, _, _, LISTA));
 		?role( _,_,_,CAPACIDADE,_,_,_,_,_,_,_) ;
-//		?resourceNode( _,_,_,_) ;
-		
-		//!!dropAll;
-		
 		?lessqtt( LISTA, ITEM );
 		?item( ITEM, VOL_ITEM, _, _ );
 		?lat(Y0);
@@ -26,7 +23,7 @@
 		?repeat( gather, VEZES, [], VARIOS_GATHER );
 		
 		PASSOS = [ goto( X, Y ) | VARIOS_GATHER ];
-		.concat( PASSOS, [ goto( STORAGECENTRAL ), store( ITEM, VEZES ) ], MAIS_PASSOS );
+		.concat( PASSOS, [ goto( STORAGE ), store( ITEM, VEZES ) ], MAIS_PASSOS );
 		
 		!addtask(fastgathering,4,MAIS_PASSOS,[]);
 	.

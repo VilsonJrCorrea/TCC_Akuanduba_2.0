@@ -522,3 +522,11 @@ validaMenorDistancia(X,Y,P):-X<=Y&P=X.
 
 validaName(X,Y,NAME,NAMEATUAL,P):- X>Y  & P = NAME.
 validaName(X,Y,NAME,NAMEATUAL,P):- X<=Y & P = NAMEATUAL.
+
+chooseARandomStorage(STORAGE):-
+		pointsPolygonStorage(LIST)
+		& .length(LIST,X)
+		& P= math.random(X)
+		& I=.math.floow(P)
+		& .nth(I,LIST,STORAGE)
+.
