@@ -226,19 +226,26 @@ procurarTodosItens( [required(ITEM1,QTD1)|T], ITENSSTORAGE )
  * Fim da procura dos itens do Job no dep�sito.
  */
 
-buildStore( L, R )
-	:-
-		hasItem( I, Q ) &
-		not .member( store( I, Q ), L) &
-//		.print( "1-I: ", I, ", Q: ", Q, ", L: ", L ) &
-		buildStore( [store( I, Q ) | L ], R ).
+//buildStore( L, R )
+//	:-
+//		hasItem( I, Q ) &
+//		not .member( store( I, Q ), L) &
+////		.print( "1-I: ", I, ", Q: ", Q, ", L: ", L ) &
+//		buildStore( [store( I, Q ) | L ], R ).
+//
+//buildStore( L, R )
+//	:-
+////		not hasItem( I, Q ) &
+////		.print( "2-I: ", I, ", Q: ", Q, ", L: ", L ) &
+////		.member( store( I, Q ), L ) &
+//		R = L.
 
-buildStore( L, R )
-	:-
-//		not hasItem( I, Q ) &
-//		.print( "2-I: ", I, ", Q: ", Q, ", L: ", L ) &
-//		.member( store( I, Q ), L ) &
-		R = L.
+buildListOfItens(L,R):-
+		hasItem( I, Q ) &
+		not .member( item( I, Q ), L) &
+		buildListOfItens( [item( I, Q ) | L ], R )
+.
+buildListOfItens( L, R )	:-		R = L.
 
 buscarItensDependentes( [], LISTA, RETORNO )
 	:-
@@ -366,15 +373,6 @@ amilastfreetruck(ME)
 
 	
 //Storage distribuido==========================================================================
-+!stepsToGET(LISTITENS,STEPS):true
-	<-
-		?buildStepsToGET( LISTITENS, [], R);
-.
-
-+!stepsToPOST(LIST,STEPS):true
-	<-
-		?buildStepsToPOST( LIST, [], R);
-.
 
 buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
@@ -416,7 +414,6 @@ buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
 		)	
 		& buildStepsToPOST( T, N_LISTA, RETORNO)
 	.
-
 
 
 repeat(TERM , QTD , L ,RR ) :- QTD> 0 & repeat(TERM , QTD-1 , [TERM|L] , RR). 						

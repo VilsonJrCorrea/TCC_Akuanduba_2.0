@@ -1,12 +1,9 @@
-+!dropAll
-	:
-		hasItem( _, _)
-	&	whatStorageUse( STORAGE )
++!dropAll :	hasItem( _, _)
 	<-
-		?buildStore( [], LISTAFINAL );
-		.concat( [goto(STORAGE)], LISTAFINAL, PASSOS );
+		?buildListOfItens([],LISTAFINAL);
+		?stepsToPOST(LISTAFINAL,PASSOS)
 		!addtask(dropAll,8.9,PASSOS,[]);
-		//.print( "REMOVER ITENS CARREGADOS" );
 	.
 
 +!dropAll <-true.
+

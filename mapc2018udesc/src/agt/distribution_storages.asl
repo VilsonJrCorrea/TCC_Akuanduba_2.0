@@ -28,3 +28,12 @@
 	<-
 	RETORNO=LIST
 .
++!stepsToGET(LISTITENS,STEPS):true
+	<-
+		?buildStepsToGET( LISTITENS, [], R);
+.
+
++!stepsToPOST(LIST,STEPS):true
+	<-
+		?buildStepsToPOST( LIST, [], R);
+.
