@@ -14,7 +14,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 	&	not craftCommitment( NAME, _ )
 	& 	not (lastMotorcycle(NAME)|lastCar(NAME))
 	&	not missionCommitment( NAME, _ )
-	&	step(STEPATUAL) & STEPATUAL>5 
+	&	step(STEPATUAL) & STEPATUAL>119
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
 	&	sumvolruleJOB( ITENS, VOLUMETOTAL )
 	&	CAPACIDADE >= VOLUMETOTAL

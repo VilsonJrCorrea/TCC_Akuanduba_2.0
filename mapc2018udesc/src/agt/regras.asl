@@ -380,7 +380,6 @@ amilastfreetruck(ME)
 buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
 buildStepsToGET( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
-//////.print("Entrou aqui")&
 		 repeat( retrieve(ITEM,1) , QTD , [] ,RR )
 		& whatStorageUseToGET(ITEM,R1)		
 		& ((not .member(goto(R1),LISTA)
