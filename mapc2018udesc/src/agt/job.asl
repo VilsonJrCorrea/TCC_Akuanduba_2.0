@@ -19,7 +19,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 //	&	whatStorageUse(STORAGE)
 //	&	storage(STORAGE,_,_,_,_,ITENSSTORAGE)
 //	&	procurarTodosItens( ITENSJOB, ITENSSTORAGE )
-    &   stepsToGET(ITENSJOB,STEPS)
+//    &   stepsToGET(ITENSJOB,STEPS)
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
 	
 	&	sumvolruleJOB( ITENSJOB, VOLUMETOTAL )
@@ -27,6 +27,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	&	possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
 	&	TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )
     <- 
+    	.print("Add intencao do job ",NOMEJOB);
     	addIntentionToDoJob(NAME, NOMEJOB);
   .
  
@@ -47,7 +48,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	<-	
 //		?whatStorageUse(STORAGE);
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
-		?stepsToGET(ITENS,STEPS);
+		!stepsToGET(ITENS,STEPS);
 		
 //		PASSOS_1 = [ goto( STORAGE ) ];
 //		?passosRetrieve( ITENS, [], RETORNO );
