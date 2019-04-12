@@ -152,37 +152,40 @@ calculatehowmanystepsrecharge(Facility,STEPSRECHARGE):-
 						chargingStation(Facility,_,_,CAP)&
 						STEPSRECHARGE = math.ceil(BAT/CAP).
 						
-possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
-	:-
-		job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS)
-	&	whatStorageUse( STORAGE )
-	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
-	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
-	&	lat( MEULAT )
-	&	lon( MEULON )
-	&	calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
-	&	distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
-	&	calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
-	&	distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
-	&	qtdItens( ITENS, 0, NUMEROITENS )
-	&	TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
-	.
+//possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
+//	:-
+//		job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS)
+//	&	whatStorageUse( STORAGE )
+//	
+//	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
+//	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
+//	&	lat( MEULAT )
+//	&	lon( MEULON )
+//	&	calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
+//	&	distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
+//	&	calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
+//	&	distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
+//	&	qtdItens( ITENS, 0, NUMEROITENS )
+//	&	TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
+//	.
 
-possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
-	:-
-		mission(NOMEMISSION,LOCALENTREGA,_,STEPINICIAL,STEPFINAL,_,_,_,ITENS)
-	&	whatStorageUse( STORAGE )
-	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
-	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
-	&	lat( MEULAT )
-	&	lon( MEULON )
-	&	calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
-	&	distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
-	&	calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
-	&	distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
-	&	qtdItens( ITENS, 0, NUMEROITENS )
-	&	TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
-	.
+getHeadOfSteps([H|T],H):-true.
+
+//possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
+//	:-
+//		mission(NOMEMISSION,LOCALENTREGA,_,STEPINICIAL,STEPFINAL,_,_,_,ITENS)
+//	&	whatStorageUse( STORAGE )
+//	&	storage( STORAGE, STORAGELAT, STORAGELON, _, _, _)
+//	&	storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
+//	&	lat( MEULAT )
+//	&	lon( MEULON )
+//	&	calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
+//	&	distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
+//	&	calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
+//	&	distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
+//	&	qtdItens( ITENS, 0, NUMEROITENS )
+//	&	TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
+//	.
 
 qtdItens( [], QTDATUAL, QTDTOTAL )
 	:-
@@ -230,13 +233,13 @@ procurarTodosItens( [required(ITEM1,QTD1)|T], ITENSSTORAGE )
 //	:-
 //		hasItem( I, Q ) &
 //		not .member( store( I, Q ), L) &
-////		.print( "1-I: ", I, ", Q: ", Q, ", L: ", L ) &
+////		////.print( "1-I: ", I, ", Q: ", Q, ", L: ", L ) &
 //		buildStore( [store( I, Q ) | L ], R ).
 //
 //buildStore( L, R )
 //	:-
 ////		not hasItem( I, Q ) &
-////		.print( "2-I: ", I, ", Q: ", Q, ", L: ", L ) &
+////		////.print( "2-I: ", I, ", Q: ", Q, ", L: ", L ) &
 ////		.member( store( I, Q ), L ) &
 //		R = L.
 
@@ -249,13 +252,13 @@ buildListOfItens( L, R )	:-		R = L.
 
 buscarItensDependentes( [], LISTA, RETORNO )
 	:-
-		.print( "[], LISTA: ", LISTA, ", RETORNO: ", RETORNO ) &
+		////.print( "[], LISTA: ", LISTA, ", RETORNO: ", RETORNO ) &
 		RETORNO=LISTA
 	.
 
 buscarItensDependentes( [item(ITEM, _, _, parts( [] ) ) | RESTOS_DOS_ITENS ], LISTA, RETORNO )
 	:-
-		.print( "[], LISTA: ", LISTA, ", RETORNO: ", RETORNO ) &
+		////.print( "[], LISTA: ", LISTA, ", RETORNO: ", RETORNO ) &
 		.concat( LISTA, [ retrieve( ITEM, 1) ], NLISTA ) &
 		buscarItensDependentes( RESTOS_DOS_ITENS, LISTA, RETORNO )
 		
@@ -377,6 +380,7 @@ amilastfreetruck(ME)
 buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
 buildStepsToGET( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
+//////.print("Entrou aqui")&
 		 repeat( retrieve(ITEM,1) , QTD , [] ,RR )
 		& whatStorageUseToGET(ITEM,R1)		
 		& ((not .member(goto(R1),LISTA)
@@ -402,7 +406,7 @@ haveGoTo([],E,RR,LISTAUX,RESPOSTA):-
 
 buildStepsToPOST( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
-buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
+buildStepsToPOST( [item(ITEM,_)|T], LISTA, RETORNO ):-
 		 repeat( store(ITEM,1) , 1 , [] ,RR )
 		& whatStorageUseToPOST(ITEM,R1)
 		& ((not .member(goto(R1),LISTA)
@@ -498,6 +502,11 @@ containsItens(NAMEITEM,[],CONT,R):-R=CONT.
 
 getNameItem(item(NAME,_,_),NAME):-true.
 
+getNameStorage(storage(NAME,_,_,_),R):- 
+	R=NAME
+.
+getNameStorageGoTo(goto(NAME),R):-R=NAME.
+
 desmontaItemListaStorage(storage(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
 					NNAME=NAME &
 					LLAT=LAT &
@@ -535,7 +544,7 @@ formatToGET([], RETRIEVE, RETRIEVELIST) :-
     RETRIEVELIST = RETRIEVE.
  
 formatToGET([H|T], RETRIEVE, RETRIEVELIST) :-
-	 formatToGET(T, [required( H, 1, _)|RETRIEVE], RETRIEVELIST).
+	 formatToGET(T, [required( H, 1)|RETRIEVE], RETRIEVELIST).
 	 
 formatToPOST([], RETRIEVE, RETRIEVELIST) :- 
     RETRIEVELIST = RETRIEVE.

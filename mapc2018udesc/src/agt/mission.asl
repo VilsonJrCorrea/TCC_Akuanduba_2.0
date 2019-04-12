@@ -16,13 +16,13 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 	&	not missionCommitment( NAME, _ )
 	&	step(STEPATUAL) & STEPATUAL>5 
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
-//	&	whatStorageUse(STORAGE)
 	&	sumvolruleJOB( ITENS, VOLUMETOTAL )
 	&	CAPACIDADE >= VOLUMETOTAL
-	&	possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
-	&	TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )
     <- 
-    	addIntentionToDoMission(NAME, NOMEMISSION);
+    !possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO );
+    	if(TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )){
+	    	addIntentionToDoMission(NAME, NOMEMISSION);
+    	}
   .
  
 +domission( NOMEMISSION )
@@ -35,6 +35,25 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
     	!!realizarMission( NOMEMISSION );
 	.
 
+
++!possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
+	<-
+		?mission(NOMEMISSION,LOCALENTREGA,_,STEPINICIAL,STEPFINAL,_,_,_,ITENS);
+		!stepsToGET(ITENS,STEPS);
+		?getHeadOfSteps(STEPS,COMMAND);
+		?getNameStorageGoTo(COMMAND,STORAGE);
+		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);
+		?storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
+		?lat( MEULAT )
+		?lon( MEULON )
+		?calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
+		?distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
+		?calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
+		?distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
+		?qtdItens( ITENS, 0, NUMEROITENS )
+		TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
+	.
+
 //@realizarMissionSimples[atomic]
 +!realizarMission( NOMEMISSION )
 	:
@@ -44,7 +63,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 //		PASSOS_1 = [ goto( STORAGE ) ];
 //		?passosRetrieve( ITENSMISSION, [], RETORNO );
 //		.concat( PASSOS_1, RETORNO, PASSOS_2);
-		?stepsToGET(ITENSMISSION,STEPS);
+		!stepsToGET(ITENSMISSION,STEPS);
 		.concat( STEPS, [ goto( LOCALENTREGA ), deliver_job( NOMEMISSION )], PASSOS_3);
 		
 		!addtask(mission,9,PASSOS_3,[]);

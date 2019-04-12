@@ -23,7 +23,7 @@
 +!craftSemParts	:	name(NAMEAGENT)						  & 
 					gatherCommitment(NAMEAGENT,ITEM)
 				
-	<-				
+	<-		
 		.wait(resourceNode(_,LATRESOUR,LONRESOUR,ITEM));
 		?role(truck,_,_,LOAD,_,_,_,_,_,_,_); 		
 		?item(ITEM,TAM,_,_);
@@ -32,7 +32,7 @@
 		
 		.wait(pointsPolygonStorage( _ ));
 		?repeat(item(ITEM,1),QTD-2,[],LISTITENS);
-		?stepsToPOST(LISTITENS,STEPSDELIVERY);
+		!stepsToPOST(LISTITENS,STEPSDELIVERY);
 		
 		.concat([goto(LATRESOUR, LONRESOUR)],GATHERS,STEPSDELIVERY,PLAN);
 //		+steps( craftSemParts, PLAN);

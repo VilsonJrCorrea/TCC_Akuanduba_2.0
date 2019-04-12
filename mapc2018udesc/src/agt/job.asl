@@ -14,23 +14,37 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 	&	not missionCommitment( NAME, _ )
 	& 	not (lastMotorcycle(NAME)|lastCar(NAME))
 	&   not amilastfreetruck(_) //teste
-//	&	step(STEPATUAL) & STEPATUAL>119
 	&	step(STEPATUAL)
-//	&	whatStorageUse(STORAGE)
-//	&	storage(STORAGE,_,_,_,_,ITENSSTORAGE)
-//	&	procurarTodosItens( ITENSJOB, ITENSSTORAGE )
-//    &   stepsToGET(ITENSJOB,STEPS)
     &	role(ROLE,_,_,CAPACIDADE,_,_,_,_,_,_,_)
-	
 	&	sumvolruleJOB( ITENSJOB, VOLUMETOTAL )
 	&	CAPACIDADE >= VOLUMETOTAL
-	&	possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
-	&	TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )
+	
     <- 
-    	.print("Add intencao do job ",NOMEJOB);
-    	addIntentionToDoJob(NAME, NOMEJOB);
+    	!possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO );
+    	if(TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )){
+    		addIntentionToDoJob(NAME, NOMEJOB);	
+    	}
   .
  
+ +!possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
+	<-
+		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
+		!stepsToGET(ITENS,STEPS);
+		?getHeadOfSteps(STEPS,COMMAND);
+		?getNameStorageGoTo(COMMAND,STORAGE);
+		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);
+		?storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _);
+		?lat( MEULAT )
+		?lon( MEULON )
+		?calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE );
+		?distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE );
+ 		?calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO );
+		?distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO );
+		?qtdItens( ITENS, 0, NUMEROITENS );
+		TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10);
+	.
+ 
+
 +dojob(NOMEJOB)
 	:
 		role(ROLE,_,_,_,_,_,_,_,_,_,_) 

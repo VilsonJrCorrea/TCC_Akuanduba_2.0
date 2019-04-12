@@ -18,15 +18,17 @@ lat(48.89999).
 lon(2.40999).
 item(item2,_,_).
 job(job0,storage5,384,1,67,[required(item10,1),required(item11,2),required(item5,1),required(item7,1),required(item9,1)]).
-itensXPTO([item(item2,_,_),item(item2,_,_),item(item2,_,_)]).
+//itensXPTO([item(item2,_,_),item(item2,_,_),item(item2,_,_)]).
+itensXPTO([item(item1,3)]).
 !start.
 
 +!start : true 
 	<-	
-		?job(_,_,_,_,_,LISTITENS);
-		!stepsToGET(LISTITENS,STEPS1);
+//		?job(_,_,_,_,_,LISTITENS);
+//		!stepsToGET(LISTITENS,STEPS1);
 		
-		?itensXPTO(LIST);		
+		?itensXPTO(LIST);	
+		.print("LIST",LIST);	
 		!stepsToPOST(LIST,STEPS2);
 	.
 
@@ -37,7 +39,9 @@ itensXPTO([item(item2,_,_),item(item2,_,_),item(item2,_,_)]).
 
 +!stepsToPOST(LIST,STEPS):true
 	<-
+		.print("KKK ",LIST);
 		?buildStepsToPOST( LIST, [], R);
+		.print("RRR",R);
 .
 
 buildStepsToGET( [], LISTA, RETORNO ) :- RETORNO = LISTA.
@@ -68,7 +72,8 @@ haveGoTo([],E,RR,LISTAUX,RESPOSTA):-
 
 buildStepsToPOST( [], LISTA, RETORNO ) :- RETORNO = LISTA.
 
-buildStepsToPOST( [item(ITEM, _,_)|T], LISTA, RETORNO ):-
+buildStepsToPOST( [item(ITEM,_)|T], LISTA, RETORNO ):-
+		.print("Entrou aqui")&
 		 repeat( store(ITEM,1) , 1 , [] ,RR )
 		& whatStorageUseToPOST(ITEM,R1)
 		& ((not .member(goto(R1),LISTA)
