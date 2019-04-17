@@ -28,7 +28,7 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
  +!possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
 	<-
 		?job(NOMEJOB,LOCALENTREGA,REWARD,STEPINICIAL,STEPFINAL,ITENS);
-		?stepsToGET(ITENS,STEPS);
+		!stepsToGET(ITENS,STEPS);
 		?getHeadOfSteps(STEPS,COMMAND);
 		?getNameStorageGoTo(COMMAND,STORAGE);
 		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);

@@ -39,7 +39,7 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 +!possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
 	<-
 		?mission(NOMEMISSION,LOCALENTREGA,_,STEPINICIAL,STEPFINAL,_,_,_,ITENS);
-		?stepsToGET(ITENS,STEPS);
+		!stepsToGET(ITENS,STEPS);
 		?getHeadOfSteps(STEPS,COMMAND);
 		?getNameStorageGoTo(COMMAND,STORAGE);
 		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);
