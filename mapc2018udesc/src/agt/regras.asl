@@ -505,6 +505,7 @@ getNameStorage(storage(NAME,_,_,_),R):-
 	R=NAME
 .
 getNameStorageGoTo(goto(NAME),R):-R=NAME.
+getNameStorageGoTo(GOTO,R):-not goto(_) & pointsOfPolygon(LIST) & retornaOMaisProximo(LIST,100000,RAUX,R) & R=NAME & .print("***** ",R," *****").
 
 desmontaItemListaStorage(storage(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
 					NNAME=NAME &

@@ -28,6 +28,7 @@
 	<-
 	RETORNO=LIST
 .
+
 +!stepsToGET(LISTITENS,STEPS):true
 	<-
 		?buildStepsToGET( LISTITENS, [], STEPS);
