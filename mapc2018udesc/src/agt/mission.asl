@@ -20,16 +20,16 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 	&	CAPACIDADE >= VOLUMETOTAL
     <- 
     !possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO );
-    	if(TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )){
-	    	addIntentionToDoMission(NAME, NOMEMISSION);
-    	}
+    .print("Tempo necessario mission ",TEMPONECESSARIO);
+	if(TEMPONECESSARIO <= ( STEPFINAL - STEPATUAL )){
+    	addIntentionToDoMission(NAME, NOMEMISSION);
+	}
   .
  
 +domission( NOMEMISSION )
 	:
 		role(ROLE,_,_,_,_,_,_,_,_,_,_)
     <-
-    	.print( "Eu, um(a) ", ROLE, " vou fazer a mission ", NOMEMISSION );
     	!dropAll;
     	!removetask(fastgathering,_,_,_);
     	!!realizarMission( NOMEMISSION );
@@ -43,15 +43,20 @@ repeat( retrieve(ITEM,1) , QTD , [] ,RR ) &
 		?getHeadOfSteps(STEPS,COMMAND);
 		?getNameStorageGoTo(COMMAND,STORAGE);
 		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);
-		?storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _)
-		?lat( MEULAT )
-		?lon( MEULON )
-		?calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE )
-		?distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE )
-		?calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO )
-		?distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO )
-		?qtdItens( ITENS, 0, NUMEROITENS )
-		TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10)
+		?storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _);
+		?lat( MEULAT );
+		?lon( MEULON );
+		?calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE );
+		?distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE );
+		?calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO );
+		?distanciasemsteps( DISTANCIADESTINO, STEPSDESTINO );
+		?qtdItens( ITENS, 0, NUMEROITENS );
+		TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10);
+	.
+
++!possuoTempoParaRealizarMISSION( NOMEMISSION, TEMPONECESSARIO )
+	<-
+		TEMPONECESSARIO = 1000;
 	.
 
 //@realizarMissionSimples[atomic]

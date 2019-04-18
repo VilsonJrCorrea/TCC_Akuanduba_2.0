@@ -33,8 +33,8 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 		?getNameStorageGoTo(COMMAND,STORAGE);
 		?storage( STORAGE, STORAGELAT, STORAGELON, _, _, _);
 		?storage( LOCALENTREGA, DESTINOLAT, DESTINOLON, _, _, _);
-		?lat( MEULAT )
-		?lon( MEULON )
+		?lat( MEULAT );
+		?lon( MEULON );
 		?calculatedistance( MEULAT, MEULON, STORAGELAT, STORAGELON, DISTANCIASTORAGE );
 		?distanciasemsteps( DISTANCIASTORAGE, STEPSSTORAGE );
  		?calculatedistance( STORAGELAT, STORAGELON, DESTINOLAT, DESTINOLON, DISTANCIADESTINO );
@@ -42,7 +42,10 @@ passosRetrieve( [required(ITEM, QTD)|T], LISTA, RETORNO ):-
 		?qtdItens( ITENS, 0, NUMEROITENS );
 		TEMPONECESSARIO = ( NUMEROITENS + STEPSDESTINO + STEPSSTORAGE + 10);
 	.
- 
+ -!possuoTempoParaRealizarJob( NOMEJOB, TEMPONECESSARIO )
+	<-
+		TEMPONECESSARIO = 1000;
+	.
 
 +dojob(NOMEJOB)
 	:
