@@ -1,0 +1,312 @@
+[
+    {
+        "id": "SaoPaulo-101-seed-8632",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "saopaulo",
+        "seedCapital": 5000,
+        "minLon": -46.73,
+        "maxLon": -46.53,
+        "minLat": -23.65,
+        "maxLat": -23.52,
+        "centerLon": -46.6,
+        "centerLat": -23.6,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 8632,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "SaoPaulo-102-seed-4407",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "saopaulo",
+        "seedCapital": 5000,
+        "minLon": -46.73,
+        "maxLon": -46.53,
+        "minLat": -23.65,
+        "maxLat": -23.52,
+        "centerLon": -46.6,
+        "centerLat": -23.6,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 4407,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "SaoPaulo-103-seed-9957",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "saopaulo",
+        "seedCapital": 5000,
+        "minLon": -46.73,
+        "maxLon": -46.53,
+        "minLat": -23.65,
+        "maxLat": -23.52,
+        "centerLon": -46.6,
+        "centerLat": -23.6,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 9957,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "SaoPaulo-104-seed-2819",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "saopaulo",
+        "seedCapital": 5000,
+        "minLon": -46.73,
+        "maxLon": -46.53,
+        "minLat": -23.65,
+        "maxLat": -23.52,
+        "centerLon": -46.6,
+        "centerLat": -23.6,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 2819,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "SaoPaulo-105-seed-782",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "saopaulo",
+        "seedCapital": 5000,
+        "minLon": -46.73,
+        "maxLon": -46.53,
+        "minLat": -23.65,
+        "maxLat": -23.52,
+        "centerLon": -46.6,
+        "centerLat": -23.6,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 782,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    }
+]

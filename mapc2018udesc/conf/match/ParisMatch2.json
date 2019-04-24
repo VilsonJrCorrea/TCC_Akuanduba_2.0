@@ -1,0 +1,312 @@
+[
+    {
+        "id": "Paris-6-seed-4824",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "paris",
+        "seedCapital": 5000,
+        "minLon": 2.26,
+        "maxLon": 2.41,
+        "minLat": 48.82,
+        "maxLat": 48.9,
+        "centerLon": 2.3209,
+        "centerLat": 48.8424,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 4824,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Paris-7-seed-5807",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "paris",
+        "seedCapital": 5000,
+        "minLon": 2.26,
+        "maxLon": 2.41,
+        "minLat": 48.82,
+        "maxLat": 48.9,
+        "centerLon": 2.3209,
+        "centerLat": 48.8424,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 5807,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Paris-8-seed-4292",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "paris",
+        "seedCapital": 5000,
+        "minLon": 2.26,
+        "maxLon": 2.41,
+        "minLat": 48.82,
+        "maxLat": 48.9,
+        "centerLon": 2.3209,
+        "centerLat": 48.8424,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 4292,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Paris-9-seed-5710",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "paris",
+        "seedCapital": 5000,
+        "minLon": 2.26,
+        "maxLon": 2.41,
+        "minLat": 48.82,
+        "maxLat": 48.9,
+        "centerLon": 2.3209,
+        "centerLat": 48.8424,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 5710,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Paris-10-seed-6173",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "paris",
+        "seedCapital": 5000,
+        "minLon": 2.26,
+        "maxLon": 2.41,
+        "minLat": 48.82,
+        "maxLat": 48.9,
+        "centerLon": 2.3209,
+        "centerLat": 48.8424,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 6173,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    }
+]
