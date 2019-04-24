@@ -18,8 +18,7 @@ roundnumber(0).
 				
 				!!buildPoligonToWells;
 				!!buildPoligonToStorages;
-				!!buildPoligonToWorkshops;
-//				!!sendcentrals;
+				!!sendcentrals;
 				!!exploration;
 				
 				!!callcraftSemParts;							
@@ -55,21 +54,20 @@ roundnumber(0).
 		+agentid(R);
 	.
 
-//+!sendcentrals
-//	:	agentid("20")
-//	<-	
-//		.wait(step(X) & X>0 & X<998);
-////		?centerStorageRule(STORAGE); 
-////		+centerStorage(STORAGE);
-////		?centerWorkshopRule(WORKSHOP);
-////		+centerWorkshop(WORKSHOP);
-////		.broadcast(tell, centerWorkshop(WORKSHOP) );
-////		.broadcast(tell, centerStorage(STORAGE) );
-//.
-//
-//+!sendcentrals : not agentid("20")
-//	<- true.
-//	
++!sendcentrals
+	:	agentid("20")
+	<-	
+		.wait(step(X) & X>0 & X<998);
+//		?centerStorageRule(STORAGE); 
+//		+centerStorage(STORAGE);
+		?centerWorkshopRule(WORKSHOP);
+		+centerWorkshop(WORKSHOP);
+		.broadcast(tell, centerWorkshop(WORKSHOP) );
+//		.broadcast(tell, centerStorage(STORAGE) );
+.
+
++!sendcentrals : not agentid("20")
+	<- true.
 
 //==============================================================
 //@end[atomic]
@@ -83,7 +81,7 @@ roundnumber(0).
 	
 		.abolish(resourceNode(_,_,_,_));
 		.abolish(pointsPolygonStorage(_));
-		.abolish(pointsPolygonWorkshop(_));
+		.abolish(centerWorkshop(_));
 		.abolish(chargingStation(_,_,_,_));
 		.abolish(doing(_));
 		.abolish(lastDoing(_));

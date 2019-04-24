@@ -1,6 +1,6 @@
 [
     {
-        "id": "Paris-116-seed-9639",
+        "id": "Paris-116-seed-3253",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "paris",
@@ -13,7 +13,7 @@
         "centerLat": 48.8424,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 9639,
+        "randomSeed": 3253,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -47,22 +47,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Paris-117-seed-4735",
+        "id": "Paris-117-seed-2928",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "paris",
@@ -75,7 +75,7 @@
         "centerLat": 48.8424,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 4735,
+        "randomSeed": 2928,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -109,22 +109,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Paris-118-seed-2881",
+        "id": "Paris-118-seed-3119",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "paris",
@@ -137,7 +137,7 @@
         "centerLat": 48.8424,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 2881,
+        "randomSeed": 3119,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -171,22 +171,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Paris-119-seed-8272",
+        "id": "Paris-119-seed-9734",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "paris",
@@ -199,7 +199,7 @@
         "centerLat": 48.8424,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 8272,
+        "randomSeed": 9734,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -233,22 +233,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Paris-120-seed-7148",
+        "id": "Paris-120-seed-5835",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "paris",
@@ -261,7 +261,7 @@
         "centerLat": 48.8424,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 7148,
+        "randomSeed": 5835,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -295,16 +295,16 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"

@@ -1,6 +1,6 @@
 [
     {
-        "id": "SaoPaulo-136-seed-9528",
+        "id": "SaoPaulo-136-seed-6821",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "saopaulo",
@@ -13,7 +13,7 @@
         "centerLat": -23.6,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 9528,
+        "randomSeed": 6821,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -47,22 +47,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "SaoPaulo-137-seed-2221",
+        "id": "SaoPaulo-137-seed-7362",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "saopaulo",
@@ -75,7 +75,7 @@
         "centerLat": -23.6,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 2221,
+        "randomSeed": 7362,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -109,22 +109,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "SaoPaulo-138-seed-9989",
+        "id": "SaoPaulo-138-seed-730",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "saopaulo",
@@ -137,7 +137,7 @@
         "centerLat": -23.6,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 9989,
+        "randomSeed": 730,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -171,22 +171,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "SaoPaulo-139-seed-7814",
+        "id": "SaoPaulo-139-seed-8455",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "saopaulo",
@@ -199,7 +199,7 @@
         "centerLat": -23.6,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 7814,
+        "randomSeed": 8455,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -233,22 +233,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "SaoPaulo-140-seed-702",
+        "id": "SaoPaulo-140-seed-5607",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "saopaulo",
@@ -261,7 +261,7 @@
         "centerLat": -23.6,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 702,
+        "randomSeed": 5607,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -295,16 +295,16 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"

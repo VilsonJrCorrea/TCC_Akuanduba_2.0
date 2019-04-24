@@ -1,6 +1,6 @@
 [
     {
-        "id": "Copenhagen-71-seed-2347",
+        "id": "Copenhagen-71-seed-5737",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "copenhagen",
@@ -13,7 +13,7 @@
         "centerLat": 55.65,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 2347,
+        "randomSeed": 5737,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -47,22 +47,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Copenhagen-72-seed-6323",
+        "id": "Copenhagen-72-seed-8651",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "copenhagen",
@@ -75,7 +75,7 @@
         "centerLat": 55.65,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 6323,
+        "randomSeed": 8651,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -109,22 +109,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Copenhagen-73-seed-5315",
+        "id": "Copenhagen-73-seed-2020",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "copenhagen",
@@ -137,7 +137,7 @@
         "centerLat": 55.65,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 5315,
+        "randomSeed": 2020,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -171,22 +171,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Copenhagen-74-seed-4949",
+        "id": "Copenhagen-74-seed-8301",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "copenhagen",
@@ -199,7 +199,7 @@
         "centerLat": 55.65,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 4949,
+        "randomSeed": 8301,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -233,22 +233,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Copenhagen-75-seed-6207",
+        "id": "Copenhagen-75-seed-2272",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "copenhagen",
@@ -261,7 +261,7 @@
         "centerLat": 55.65,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 6207,
+        "randomSeed": 2272,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -295,16 +295,16 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"

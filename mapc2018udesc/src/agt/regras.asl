@@ -99,19 +99,19 @@ nearResourceNodeWithItem( X1,Y1, X0, Y0, ITEM ):-
 
 					 
 					 
-//centerWorkshopRule(WORKSHOP)
-//	:-
-//		minLat(MILA) &
-//		minLon(MILO) &
-//		maxLat(MALA) &
-//		maxLon(MALO) &
-//		X0=(MILA+MALA)/2 &
-//		Y0=(MILO+MALO)/2 &
-//		workshop(WORKSHOP, X1,Y1) & 
-//		not ( workshop(_, X2,Y2) & 
-//			math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0)) > 
-//			math.sqrt((X2-X0)*(X2-X0)+(Y2-Y0)*(Y2-Y0)))
-//	.
+centerWorkshopRule(WORKSHOP)
+	:-
+		minLat(MILA) &
+		minLon(MILO) &
+		maxLat(MALA) &
+		maxLon(MALO) &
+		X0=(MILA+MALA)/2 &
+		Y0=(MILO+MALO)/2 &
+		workshop(WORKSHOP, X1,Y1) & 
+		not ( workshop(_, X2,Y2) & 
+			math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0)) > 
+			math.sqrt((X2-X0)*(X2-X0)+(Y2-Y0)*(Y2-Y0)))
+	.
 					 							  
 calculatenearchargingstation(Facility,X0,Y0,X1,Y1,math.sqrt((X1-X0)*(X1-X0)+(Y1-Y0)*(Y1-Y0))):- 	
 					chargingStation(Facility, X1,Y1,_) & 
@@ -388,30 +388,6 @@ desmontaItemListaStorage(storage(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):-
 					LLON=LON
 		.
 
-
-//Workshop distribuido==========================================================================
-whatWorkshopUse(R):-
-	pointsPolygonWorkshop(LIST) &
-	percorreListaWorkshop(LIST,100000,WORKSHOP,R) 
-.					
-
-percorreListaWorkshop([H|T],DISTANCIA,MELHORWORKSHOP,R):-
-										 desmontaItemListaWorkshop(H,NAMEATUAL,LATDESTINO,LONDESTINO) &
-										 lat(LATATUAL) &
-										 lon(LONATUAL) &
-										 calculatedistance(LATATUAL,LONATUAL,LATDESTINO,LONDESTINO,DISTANCIACALCULADA) &
-										 validaMenorDistancia(DISTANCIACALCULADA,DISTANCIA,MENORDISTANCIA)&
-										 validaName(DISTANCIACALCULADA,DISTANCIA,MELHORWORKSHOP,NAMEATUAL,NOVOMELHORWORKSHOP)&
-										 percorreListaWorkshop(T,MENORDISTANCIA,NOVOMELHORWORKSHOP,R)
-								.
-								
-percorreListaWorkshop([],DISTANCIA,MELHORWORKSHOP,R):- R=MELHORWORKSHOP.	
-											
-desmontaItemListaWorkshop(workshop(NAME,LAT,LON,RAIO),NNAME,LLAT,LLON):- 
-					NNAME=NAME &
-					LLAT=LAT &
-					LLON=LON
-		.
 
 //==================================================================================================
 

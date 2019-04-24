@@ -1,6 +1,6 @@
 [
     {
-        "id": "Berlin-71-seed-6726",
+        "id": "Berlin-71-seed-8534",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "berlin",
@@ -13,7 +13,7 @@
         "centerLat": 52.5,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 6726,
+        "randomSeed": 8534,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -47,22 +47,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Berlin-72-seed-7521",
+        "id": "Berlin-72-seed-1807",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "berlin",
@@ -75,7 +75,7 @@
         "centerLat": 52.5,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 7521,
+        "randomSeed": 1807,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -109,22 +109,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Berlin-73-seed-6633",
+        "id": "Berlin-73-seed-6991",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "berlin",
@@ -137,7 +137,7 @@
         "centerLat": 52.5,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 6633,
+        "randomSeed": 6991,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -171,22 +171,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Berlin-74-seed-9171",
+        "id": "Berlin-74-seed-9661",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "berlin",
@@ -199,7 +199,7 @@
         "centerLat": 52.5,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 9171,
+        "randomSeed": 9661,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -233,22 +233,22 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
     },
     {
-        "id": "Berlin-75-seed-5543",
+        "id": "Berlin-75-seed-1352",
         "scenarioClass": "city.CitySimulation",
         "steps": 1000,
         "map": "berlin",
@@ -261,7 +261,7 @@
         "centerLat": 52.5,
         "proximity": 5,
         "cellSize": 200,
-        "randomSeed": 5543,
+        "randomSeed": 1352,
         "randomFail": 1,
         "gotoCost": 1,
         "rechargeRate": 0.3,
@@ -295,16 +295,16 @@
         "roles": "$(../roles/roles.json)",
         "entities": [
             {
-                "drone": 4
+                "drone": 8
             },
             {
-                "motorcycle": 8
+                "motorcycle": 16
             },
             {
-                "car": 10
+                "car": 20
             },
             {
-                "truck": 12
+                "truck": 24
             }
         ],
         "generate": "$(../generate/generate.json)"
