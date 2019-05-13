@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         String nomeRoot = "conf";
         String nomeSubPasta = "local";
-        String nomePreArquivo = "eisb";
+        String nomePreArquivo = "eis";
 
         File dir = new File(nomeRoot + File.separator + nomeSubPasta);
         System.out.println(dir.getAbsolutePath());
@@ -29,13 +29,13 @@ public class Main {
         boolean notifications = false;
         boolean queued = false;
         String preConnection = "connection";
-        String preUserName = "akuanduba_udesc";
+        String preUserName = "akuanduba_distribuido2_";
         String password = "kF5pLs";
         boolean iilang = false;
         boolean xml = false;
 
         for (int i = 0; i < 34; i++) {
-            String nameCompleto = preConnection + "B" + (i + 1);
+            String nameCompleto = preConnection + "A" + (i + 1);
             String userNameCompleto = preUserName + (i + 1);
             Entiti entiti = new Entiti(nameCompleto, userNameCompleto, password, iilang, xml);
             Entiti[] entitis = {entiti};

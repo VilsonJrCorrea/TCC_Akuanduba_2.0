@@ -1,0 +1,312 @@
+[
+    {
+        "id": "Copenhagen-226-seed-8715",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "copenhagen",
+        "seedCapital": 5000,
+        "minLon": 12.47,
+        "maxLon": 12.58,
+        "minLat": 55.6,
+        "maxLat": 55.71,
+        "centerLon": 12.5,
+        "centerLat": 55.65,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 8715,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Copenhagen-227-seed-6130",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "copenhagen",
+        "seedCapital": 5000,
+        "minLon": 12.47,
+        "maxLon": 12.58,
+        "minLat": 55.6,
+        "maxLat": 55.71,
+        "centerLon": 12.5,
+        "centerLat": 55.65,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 6130,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Copenhagen-228-seed-3186",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "copenhagen",
+        "seedCapital": 5000,
+        "minLon": 12.47,
+        "maxLon": 12.58,
+        "minLat": 55.6,
+        "maxLat": 55.71,
+        "centerLon": 12.5,
+        "centerLat": 55.65,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 3186,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Copenhagen-229-seed-5114",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "copenhagen",
+        "seedCapital": 5000,
+        "minLon": 12.47,
+        "maxLon": 12.58,
+        "minLat": 55.6,
+        "maxLat": 55.71,
+        "centerLon": 12.5,
+        "centerLat": 55.65,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 5114,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Copenhagen-230-seed-6086",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "copenhagen",
+        "seedCapital": 5000,
+        "minLon": 12.47,
+        "maxLon": 12.58,
+        "minLat": 55.6,
+        "maxLat": 55.71,
+        "centerLon": 12.5,
+        "centerLat": 55.65,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 6086,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    }
+]

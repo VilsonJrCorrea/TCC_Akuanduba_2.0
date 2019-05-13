@@ -1,8 +1,0 @@
-{
-    "server": "$(server/server.json)",
-    "match": "$(match/CopenhagenMatch28.json)",
-    "teams": {
-        "A": "$(teams/A.json)",
-        "B": "$(teams/B.json)"
-    }
-}

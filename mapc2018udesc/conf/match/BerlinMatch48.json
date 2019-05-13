@@ -1,0 +1,312 @@
+[
+    {
+        "id": "Berlin-236-seed-7198",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "berlin",
+        "seedCapital": 5000,
+        "minLon": 13.35,
+        "maxLon": 13.5,
+        "minLat": 52.44,
+        "maxLat": 52.54,
+        "centerLon": 13.4,
+        "centerLat": 52.5,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 7198,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Berlin-237-seed-9949",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "berlin",
+        "seedCapital": 5000,
+        "minLon": 13.35,
+        "maxLon": 13.5,
+        "minLat": 52.44,
+        "maxLat": 52.54,
+        "centerLon": 13.4,
+        "centerLat": 52.5,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 9949,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Berlin-238-seed-9892",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "berlin",
+        "seedCapital": 5000,
+        "minLon": 13.35,
+        "maxLon": 13.5,
+        "minLat": 52.44,
+        "maxLat": 52.54,
+        "centerLon": 13.4,
+        "centerLat": 52.5,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 9892,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Berlin-239-seed-160",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "berlin",
+        "seedCapital": 5000,
+        "minLon": 13.35,
+        "maxLon": 13.5,
+        "minLat": 52.44,
+        "maxLat": 52.54,
+        "centerLon": 13.4,
+        "centerLat": 52.5,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 160,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    },
+    {
+        "id": "Berlin-240-seed-7078",
+        "scenarioClass": "city.CitySimulation",
+        "steps": 1000,
+        "map": "berlin",
+        "seedCapital": 5000,
+        "minLon": 13.35,
+        "maxLon": 13.5,
+        "minLat": 52.44,
+        "maxLat": 52.54,
+        "centerLon": 13.4,
+        "centerLat": 52.5,
+        "proximity": 5,
+        "cellSize": 200,
+        "randomSeed": 7078,
+        "randomFail": 1,
+        "gotoCost": 1,
+        "rechargeRate": 0.3,
+        "upgrades": [
+            {
+                "cost": 1000,
+                "name": "skill",
+                "step": 1
+            },
+            {
+                "cost": 1000,
+                "name": "vision",
+                "step": 50
+            },
+            {
+                "cost": 1000,
+                "name": "speed",
+                "step": 1
+            },
+            {
+                "cost": 200,
+                "name": "load",
+                "step": 10
+            },
+            {
+                "cost": 300,
+                "name": "battery",
+                "step": 5
+            }
+        ],
+        "roles": "$(../roles/roles.json)",
+        "entities": [
+            {
+                "drone": 4
+            },
+            {
+                "motorcycle": 8
+            },
+            {
+                "car": 10
+            },
+            {
+                "truck": 12
+            }
+        ],
+        "generate": "$(../generate/generate.json)"
+    }
+]

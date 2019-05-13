@@ -2,83 +2,146 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1daba581-54a9-4817-a420-538c2fd0ae37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa15.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa18.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa19.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa20.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa22.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa24.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa25.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa26.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa27.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa29.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa30.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa32.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa33.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany/eisa9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa12.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa15.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa17.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa18.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa19.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa20.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa22.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa24.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa25.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa26.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa27.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa29.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa30.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa32.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa33.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/conf/remotoGermany2/eisa9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyA11a22.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyA1a10.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyA23a34.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyB11a22.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyB1a10.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoGermanyB23a34.jcm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc11a22.jcm" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc11a22.jcm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc1a10.jcm" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc1a10.jcm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc23a34.jcm" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/mapc2018remotoUdesc23a34.jcm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/Experimentos/results/II/berlinII.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/Experimentos/results/II/berlinII.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/Experimentos/results/II/copenhagenII.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/Experimentos/results/II/copenhagenII.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-15-13-18-55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-15-15-20-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-15-22-11-59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-15-22-16-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-00-13-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-00-17-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-02-18-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-02-20-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-04-15-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-04-20-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-06-17-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-08-18-35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-08-22-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-08-24-43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-10-26-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-16-12-21-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-17-21-05-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-17-21-12-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-17-23-06-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-17-23-13-41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-01-07-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-03-09-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-03-16-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-05-10-33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-05-17-38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-07-11-52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-07-18-57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-11-14-31.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-11-21-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-13-22-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-15-17-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-15-24-12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-19-19-47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-19-26-50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-21-21-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-21-28-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-23-22-25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-18-23-29-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-01-23-44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-01-30-46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-03-25-03.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-05-26-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-05-33-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-07-27-40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-09-29-00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-11-30-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-11-37-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-13-31-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-13-38-37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-15-39-56.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-17-34-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-17-41-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-19-35-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-19-42-34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-21-36-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-21-43-53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-19-23-45-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-20-01-46-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-20-03-47-49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/logs/MASSim-log-2019-04-20-05-49-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/out/production/ReadLog/META-INF/ReadLog.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/results/berlin.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/results/berlin.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/results/copenhagen.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/results/copenhagen.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/results/paris.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/results/paris.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadLog/results/saopaulo.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadLog/results/saopaulo.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/getPartidas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../RobotJsForServerAndAgents/src/config/getPartidas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis0.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis1.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis10.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis11.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis12.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis13.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis14.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis15.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis16.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis16.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis17.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis17.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis18.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis18.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis19.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis19.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis2.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis20.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis21.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis21.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis22.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis22.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis23.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis23.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis24.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis24.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis25.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis25.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis26.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis26.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis27.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis27.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis28.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis28.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis29.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis29.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis3.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis30.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis30.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis31.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis31.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis32.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis32.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis33.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis33.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis4.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis5.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis6.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis7.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis8.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eis9.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/local/eis9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb29.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb30.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb32.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb33.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/local/eisb9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapc2018udesc/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../mapc2018udesc/.classpath" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,12 +151,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="229">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +220,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/Entiti.java" />
         <option value="$PROJECT_DIR$/src/Config.java" />
+        <option value="$PROJECT_DIR$/conf/local/eis0.json" />
+        <option value="$PROJECT_DIR$/conf/local/eis1.json" />
+        <option value="$PROJECT_DIR$/conf/local/eis10.json" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -175,8 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,18 +256,14 @@
             <path>
               <item name="generateJsonForConfig" type="b2602c69:ProjectViewProjectNode" />
               <item name="generateJsonForConfig" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generateJsonForConfig" type="b2602c69:ProjectViewProjectNode" />
-              <item name="generateJsonForConfig" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,50 +314,73 @@
       <option name="presentableId" value="Default" />
       <updated>1551630545481</updated>
       <workItem from="1551630551962" duration="2522000" />
+      <workItem from="1556309132085" duration="1741000" />
+      <workItem from="1556559795084" duration="69000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2522000" />
+    <option name="totallyTimeSpent" value="4332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/conf/local/eis1.json" />
+    <entry file="file://$PROJECT_DIR$/conf/local/eis10.json" />
+    <entry file="file://$PROJECT_DIR$/conf/local/eis0.json" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="165" selection-start-line="11" selection-start-column="165" selection-end-line="11" selection-end-column="165" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entiti.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -322,26 +405,6 @@
             <element signature="e#1073#1074#0" expanded="true" />
             <element signature="e#1112#1113#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="165" selection-start-line="11" selection-start-column="165" selection-end-line="11" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/local/eis0.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
